@@ -62,7 +62,7 @@ AddOutputFilterByType DEFLATE text/html text/plain text/xml text/javascript text
 ### Type Handlers
 ##############################
 # use the PHP5 CGI
-AddType php5-cgi .html .htm .php .inc
+# AddType php5-cgi .html .htm .php .inc
 # use proper mime-type for JS
 AddType application/javascript js
 
