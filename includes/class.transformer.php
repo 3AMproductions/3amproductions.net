@@ -112,6 +112,8 @@ class Transformer {
 					throw new Exception('Failed Transforming to String');}}
 		}
 		catch (Exception $e){
+      // rethrow, don't email
+      throw $e;
 			$msg = "Exception:\t" . $e->getMessage() . "\n" .
 					"Timestamp:\t" . date(DATE_ATOM) . "\n" .
 					"Directory:\t" . getcwd() . "\n" .

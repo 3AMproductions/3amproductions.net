@@ -5,8 +5,8 @@ class AlternateStyles {
 	var $prefStyleSheet = '';	// @String: The name (title) of the Preferred Style Sheet
 	var $styleSheets = '';		// @String: All the style sheets output in their respective html formats
 	// @constructor
-	function AlternateStyles() {
-		$this->prefStyleSheet = $this->cleanTitle($_GET['css']);
+	function __construct() {
+		$this->prefStyleSheet = $this->cleanTitle(isset($_GET['css'])? $_GET['css']:'');
 		if ( isset($_GET['cssJaxy']) && $_GET['cssJaxy'] == true ) {
 			$this->setStyleCookie($this->prefStyleSheet);
 			die();

@@ -26,10 +26,9 @@ if(isset($_POST['human']) and isset($_POST['nonce'])){
 	$nonce = md5($sum . date("H"));
 }
 
-$clean_post = null;
 if(isset ($_POST['preview'])) $clean_post = htmlchars($_POST);
 if(isset ($_POST['edit']) or isset($_POST['submit'])) $clean_post = array_map('stripslashes',(array_map('htmlentities',array_map('br2nl',$_POST))));
-if(!isset ($clean_post['name']) or !isset ($clean_post['email']) or !isset ($clean_post['subject']) or !isset ($clean_post['body']) or !isset ($clean_post['human']) or !isset ($clean_post['nonce'])) unset($clean_post);
+if(!isset ($clean_post['name']) or !isset ($clean_post['email']) or !isset ($clean_post['subject']) or !isset ($clean_post['body']) or !isset ($clean_post['human']) or !isset ($clean_post['nonce'])) $clean_post=array_fill_keys(['name', 'email', 'subject', 'body'], '');
 
 if(isset($_POST['submit'])){
 	if(!empty($_POST['name']) or !empty($_POST['email']) or !empty($_POST['subject']) or !empty($_POST['body'])){
@@ -132,13 +131,13 @@ $doc->head();
 			</div><!-- leftcolumn -->
 			<div id="rightcolumn">
 				<h2 class="vcard">Contact <span class="fn org">3AM Productions</span><a class="include" href="#emails"></a></h2>
-				<p id="greeting"><?=$greeting?></p>
+				<p id="greeting"><!--?=$greeting?--></p>
 				<?php if(isset($_GET['sent']) and $_GET['sent'] == true){ ?>
 				<p>Thank you! Your message has been sent successfully!</p>
 				<?php }elseif(isset($_GET['spambot']) and $_GET['spambot'] == true){ ?>
 				<p>We think you are a spambot because you didn't answer your math question correctly. If you are human, we apologize and you can try again by clicking the 'contact' link above.</p>
 				<?php }elseif(isset($clean_post['preview'])){ ?>
-				<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+				<form method="post">
 					<fieldset>
 						<input name="name" type="hidden" value="<?=$clean_post['name']?>"/>
 						<input name="email" type="hidden" value="<?=$clean_post['email']?>"/>
@@ -155,7 +154,7 @@ $doc->head();
 				</form>
 				
 				<?php }else{ ?>
-				<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+				<form method="post">
 					<fieldset>
 						<div class="row"><label for="name">Name:</label><input id="name" name="name" type="text" value="<?=$clean_post['name']?>" /></div>
 						<div class="row"><label for="email">Email:</label><input id="email" name="email" type="text" value="<?=$clean_post['email']?>" /></div>

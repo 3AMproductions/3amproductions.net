@@ -8,7 +8,7 @@ $i= htmlentities((!isset($_GET['i'])) ? 1 : $_GET['i']);
 $params = array(array('namespace'=>'','name'=>'project_id','value'=>$p),
 	array('namespace'=>'','name'=>'image_num','value'=>$i));
 
-if($_GET['ajax'] == "true" or $_SERVER['HTTP_X_AJAX_CONTENT_TYPE'] == 'xml'){
+if((isset($_GET['ajax']) and $_GET['ajax'] == "true") or (isset($_SERVER['HTTP_X_AJAX_CONTENT_TYPE']) and $_SERVER['HTTP_X_AJAX_CONTENT_TYPE'] == 'xml')){
 	header("Content-Type: application/xml; charset: UTF-8");
 	header("X-AJAX-Content-Type: xml");
 	//echo twix_transform('xml/twilight/portfolio.xml','xml/ns/twix/twix2ajax-xml.xsl','xml/twilight/portfolio.ajax.xml',$params,false);
@@ -16,7 +16,7 @@ if($_GET['ajax'] == "true" or $_SERVER['HTTP_X_AJAX_CONTENT_TYPE'] == 'xml'){
 	echo $t->transform();
 	exit();
 }
-if($_GET['json'] == "true" or $_SERVER['HTTP_X_AJAX_CONTENT_TYPE'] == 'json'){
+if((isset($_GET['json']) and $_GET['json'] == "true") or (isset($_SERVER['HTTP_X_AJAX_CONTENT_TYPE']) and $_SERVER['HTTP_X_AJAX_CONTENT_TYPE'] == 'json')){
  	header("Content-Type: application/json; charset: UTF-8");
 	header("X-AJAX-Content-Type: json");
 	//echo twix_transform('xml/twilight/portfolio.xml','xml/ns/twix/twix2ajax-json.xsl','xml/twilight/portfolio.ajax.json',$params,false);

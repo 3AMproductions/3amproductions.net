@@ -286,6 +286,7 @@ class HTDoc {
 		else $this->page_title = $this->base_title;
 
         $profile = (count($this->profile) > 0) ? ' profile="'.implode(" ", $this->profile).'"' : '';
+        $add_atts = '';
         if(is_array($atts)){
             foreach($atts as $att=>$val){
                 $add_atts .= ' '.$att.'="'.$val.'"';

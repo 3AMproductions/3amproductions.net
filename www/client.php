@@ -88,11 +88,11 @@ $doc->head();
 <p>This page is here to show you the progress that is being made on your site. The column to the left displays a list of pages that are currently being worked on for your site. As we work on your site, various pages will be added and removed and as a result the list on the left will continually be changing. Do not be surprised if a page that was there before is no longer there. It is all a part of the process.</p>
 <h2 class="vcard">Contact <span class="fn org">3AM Productions</span></h2>
 <p>Feel free to send us a message using the contact form below if you have any questions or comments. We will be in touch with you as soon as we can.</p>
-				<p id="greeting"><?=$greeting?></p>
+				<p id="greeting"><!--?=$greeting?--></p>
 				<?php if(isset($message_sent) and $message_sent){?>
 				<p>Thank you! Your message has been sent successfully!</p>
 				<?php }else{ ?>
-				<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+				<form method="post">
 					<fieldset>
 						<div class="row"><label for="subject">Subject:</label><input id="subject" name="subject" type="text" value=""/></div>
 						<div class="row"><label for="body">Body:</label><textarea id="body" name="body" rows="4" cols="35"></textarea></div>
