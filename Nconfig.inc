@@ -223,7 +223,7 @@ if(isset($_SESSION['track']) and !$_SESSION['track'])
 	$_analytics = null;
 else {
     // ShortStat
-    include_once('/home/pimp3am/stats.3amproductions.net/shortstat/inc.stats.php');
+    // include_once('/home/pimp3am/stats.3amproductions.net/shortstat/inc.stats.php');
 	// Google Analytics
 	$_analytics = '<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script><script type="text/javascript">_uacct = "UA-313109-1";urchinTracker();</script>'."\n";
 	//103 Bees
