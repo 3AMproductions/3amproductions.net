@@ -8,7 +8,7 @@ if (!$_SESSION['auth'] == true){
 if(isset($_SERVER['PATH_INFO'])){
 	$path = explode("/",$_SERVER['PATH_INFO']);
 	if($path[1] === "sec"){
-		require_once('config.inc');
+		require_once('/app/config.inc');
 		require_once('PhpSecInfo/PhpSecInfo.php');
 		phpsecinfo();
 		exit;

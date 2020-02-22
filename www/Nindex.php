@@ -1,5 +1,5 @@
 <?php
-require_once('Nconfig.inc');
+require_once('/app/Nconfig.inc');
 $META_DEFAULTS['base_title'] = '3AM Productions';
 $META_DEFAULTS['page_title'] = 'we make websites';
 $doc = new HTDoc($_META, $_NAV, $META_DEFAULTS);

@@ -1,5 +1,5 @@
 <?php
-require_once('config.inc');
+require_once('/app/config.inc');
 require_once('class.transformer.php');
 require_once('class.jslink.php');
 $_GET = $_REQUEST;

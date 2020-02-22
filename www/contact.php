@@ -10,7 +10,7 @@
  *  fix submission including nl2br in result (<br/>)
  * 
  */
-require_once('config.inc');
+require_once('/app/config.inc');
 
 //I hate spambots
 if(isset($_POST['human']) and isset($_POST['nonce'])){

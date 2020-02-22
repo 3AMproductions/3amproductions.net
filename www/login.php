@@ -1,6 +1,6 @@
 <?php
 //TODO: include this login on homepage
-require_once('config.inc');
+require_once('/app/config.inc');
 session_start();
 if($_REQUEST['logout']){
 	$redirect = is_null($_SESSION['redirect']) ? "http://3amproductions.net/" : $_SESSION['redirect'];

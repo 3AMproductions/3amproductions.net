@@ -1,5 +1,5 @@
 <?php
-require_once('config.inc');
+require_once('/app/config.inc');
 session_start();
 if (!$_SESSION['auth'] === true and !$_SESSION['client_auth'] === true){
 	$_SESSION['redirect'] = 'http://3amproductions.net/client';

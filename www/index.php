@@ -1,5 +1,5 @@
 <?php
-require_once('config.inc');
+require_once('/app/config.inc');
 $_META['base_title'] = '3AM Productions';
 $_META['page_title'] = 'we make websites';
 $doc = new HTDoc($_META['lang'], $_META['charset'], $_META['org'], $_META['domain'], $_META['base_title'], $_META['author'], $_META['page_title'], $_META['description'], $_META['keywords'], $_META['category'], $_META['title_separator']);
