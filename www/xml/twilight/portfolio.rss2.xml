@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:date="http://exslt.org/dates-and-times" version="2.0">
+  <channel><description><![CDATA[See how things look different @3AM.]]></description><image><url>http://3amproductions.clientsection.com/logos/0015/4020/logo.gif</url><title>3AM Productions: Portfolio</title><link>http://3amproductions.net/portfolio</link></image>
+  
+  <title><![CDATA[3AM Productions: Portfolio]]></title>
+  
+  <!-- source: http://3amproductions.net/atom -->
+  <link>http://3amproductions.net/portfolio</link>
+  <!--Unknown element link--><link xmlns="http://www.w3.org/2005/Atom" rel="via" href="http://3amproductions.net/portfolio" type="application/xhtml+xml"/>
+  <link>http://3amproductions.net/rss</link>
+  <!--Unknown element link--><link xmlns="http://www.w3.org/2005/Atom" rel="related" href="http://3amproductions.net" type="application/xhtml+xml"/>
+  <pubDate>Mon, 19 Nov 2007 03:00:00 GMT
+</pubDate>
+  <managingEditor>
+	 (Jason Karns)
+</managingEditor>
+  <!--Unknown element author--><author xmlns="http://www.w3.org/2005/Atom">
+    <name>Gilbert Velasquez</name>
+    <uri>http://3amproductions.net/gilbert</uri>
+  </author>
+  
+  
+  
+  <copyright>© 2005 Copyright 3AM Productions; 
+Creative Commons License: 
+Attribution Non-commercial Share Alike; 
+http://creativecommons.org/licenses/by-nc-sa/2.5/</copyright>
+  <item><description><![CDATA[This is the original site that 3AM Productions began with. We chose a color scheme that we liked to reflect our personality and the name of our company. In one week we went from having nothing to what you see here. We used this as an opportunity to create a site under pressure.]]> (...)</description>
+    <guid isPermaLink="false">tag:3amproductions.net,2005-05-01:/portfolio/threeamv1</guid>
+    <title><![CDATA[3AM Productions v1.0]]></title>
+    <link>http://3amproductions.net/portfolio/threeamv1</link>
+    <enclosure url="http://3amproductions.net/images/3big01.gif" type="image/gif" length="3000"/>
+    <enclosure url="http://3amproductions.net/images/3big02.gif" type="image/gif" length="3000"/>
+    <enclosure url="http://3amproductions.net/images/3big03.gif" type="image/gif" length="3000"/>
+    
+    
+    <category domain="http://3amproductions.net/xml/tags/">3am</category>
+    <category domain="http://3amproductions.net/xml/tags/">completed</category>
+    <pubDate>Sun, 01 May 2005 03:00:00 GMT
+</pubDate>
+    
+  <source url="http://3amproductions.net/atom">3AM Productions: Portfolio</source></item>
+  <item><description><![CDATA[This is our current site which we made as an update and also to be a part of the May 2006 CSS Reboot. We have gone with a minimalistic approach giving the user a bold visual experience while separating the content without the use of heavy images.]]> (...)</description>
+    <guid isPermaLink="false">tag:3amproductions.net,2006-04-01:/portfolio/threeamv2</guid>
+    <title><![CDATA[3AM Productions v2.0]]></title>
+    <link>http://3amproductions.net/portfolio/threeamv2</link>
+    <enclosure url="http://3amproductions.net/images/3v2big01.gif" type="image/gif" length="3000"/>
+    <enclosure url="http://3amproductions.net/images/3v2big02.gif" type="image/gif" length="3000"/>
+    <enclosure url="http://3amproductions.net/images/3v2big03.gif" type="image/gif" length="3000"/>
+    
+    
+    <category domain="http://3amproductions.net/xml/tags/">3am</category>
+    <category domain="http://3amproductions.net/xml/tags/">managed</category>
+    <pubDate>Sat, 01 Apr 2006 03:00:00 GMT
+</pubDate>
+    
+  <source url="http://3amproductions.net/atom">3AM Productions: Portfolio</source></item>
+  <item><description><![CDATA['RenegadeLatino' is our client's personal site. We were commissioned to create a design to reflect the dual identity of the client while maintaining a 'dark' scheme. The site also includes interactive features, such as the navigation, to engage the visitor in a more 'hands on' experience.]]> (...)</description>
+    <guid isPermaLink="false">tag:3amproductions.net,2005-01-01:/portfolio/renegade</guid>
+    <title><![CDATA[RenegadeLatino v1.0]]></title>
+    <link>http://3amproductions.net/portfolio/renegade</link>
+    <enclosure url="http://3amproductions.net/images/Rbig01.gif" type="image/gif" length="3000"/>
+    <enclosure url="http://3amproductions.net/images/Rbig02.gif" type="image/gif" length="3000"/>
+    <enclosure url="http://3amproductions.net/images/Rbig03.gif" type="image/gif" length="3000"/>
+    
+    
+    <category domain="http://3amproductions.net/xml/tags/">personal</category>
+    <category domain="http://3amproductions.net/xml/tags/">managed</category>
+    <category domain="http://3amproductions.net/xml/tags/">gil</category>
+    <pubDate>Sat, 01 Jan 2005 03:00:00 GMT
+</pubDate>
+    
+  <source url="http://3amproductions.net/atom">3AM Productions: Portfolio</source></item>
+  <item><description><![CDATA[This is the second version of the RenegadeLatino site we have made. It has a thin fixed-width single column made because the client had only blog posts to display and wanted something that was simple. The site has a dark theme overall using blues and reds to highlight certain elements. Please Note: We make all our sites compliant with all browsers, but the client specified use of .png images and a non-compliance with IE previous to 7.]]> (...)</description>
+    <guid isPermaLink="false">tag:3amproductions.net,2007-01-01:/portfolio/renegadev2</guid>
+    <title><![CDATA[RenegadeLatino v2.0]]></title>
+    <link>http://3amproductions.net/portfolio/renegadev2</link>
+    <enclosure url="http://3amproductions.net/images/Rv2big01.jpg" type="image/gif" length="3000"/>
+    <enclosure url="http://3amproductions.net/images/Rv2big02.jpg" type="image/gif" length="3000"/>
+    <enclosure url="http://3amproductions.net/images/Rv2big03.jpg" type="image/gif" length="3000"/>
+    
+    
+    <category domain="http://3amproductions.net/xml/tags/">personal</category>
+    <category domain="http://3amproductions.net/xml/tags/">managed</category>
+    <category domain="http://3amproductions.net/xml/tags/">gil</category>
+    <pubDate>Mon, 01 Jan 2007 03:00:00 GMT
+</pubDate>
+    
+  <source url="http://3amproductions.net/atom">3AM Productions: Portfolio</source></item>
+  <item><description><![CDATA[This site was created as part of a project for a Latino/a Studies class at the Ohio State University. It showcases information gathered during a quarter long project in collecting information from web sites of Latino/a Studies departments at universities across the country. Interviews were also done with key faculty and staff at tOSU and conclusions were drawn. The design was simple, straghtforward and made with buckeye colors.]]> (...)</description>
+    <guid isPermaLink="false">tag:3amproductions.net,2006-03-08:/portfolio/latinostudiesv1</guid>
+    <title><![CDATA[Latino Studies]]></title>
+    <link>http://3amproductions.net/portfolio/latinostudiesv1</link>
+    <enclosure url="http://3amproductions.net/images/LSbig01.png" type="image/gif" length="3000"/>
+    <enclosure url="http://3amproductions.net/images/LSbig02.png" type="image/gif" length="3000"/>
+    <enclosure url="http://3amproductions.net/images/LSbig03.png" type="image/gif" length="3000"/>
+    
+    
+    <category domain="http://3amproductions.net/xml/tags/">personal</category>
+    <category domain="http://3amproductions.net/xml/tags/">completed</category>
+    <category domain="http://3amproductions.net/xml/tags/">gil</category>
+    <pubDate>Wed, 08 Mar 2006 03:00:00 GMT
+</pubDate>
+    
+  <source url="http://3amproductions.net/atom">3AM Productions: Portfolio</source></item>
+  <item><description><![CDATA[This is the second design created for the HBSA at OSU. This showcases the next upcoming event but is also more colorful to include the more invigorating feel of the group. This design, as opposed to the first design, was meant to showcase more of the vibrancy of the group itself as opposed to reflecting OSU.]]> (...)</description>
+    <guid isPermaLink="false">tag:3amproductions.net,2006-04-01:/portfolio/hbsav2</guid>
+    <title><![CDATA[HBSA v2.0]]></title>
+    <link>http://3amproductions.net/portfolio/hbsav2</link>
+    <enclosure url="http://3amproductions.net/images/H2big01.gif" type="image/gif" length="3000"/>
+    <enclosure url="http://3amproductions.net/images/H2big02.gif" type="image/gif" length="3000"/>
+    <enclosure url="http://3amproductions.net/images/H2big03.gif" type="image/gif" length="3000"/>
+    
+    
+    <category domain="http://3amproductions.net/xml/tags/">probono</category>
+    <category domain="http://3amproductions.net/xml/tags/">completed</category>
+    <category domain="http://3amproductions.net/xml/tags/">gil</category>
+    <pubDate>Sat, 01 Apr 2006 03:00:00 GMT
+</pubDate>
+    
+  <source url="http://3amproductions.net/atom">3AM Productions: Portfolio</source></item>
+  <item><description><![CDATA[This is the final version of the site that was approved by the client. They opted for a fixed size site in all dimensions, so to allow for maximization of content, special effects were used to expand and contract the text area. Lightbox is used to handle the center column of images available on all pages of the site.]]> (...)</description>
+    <guid isPermaLink="false">tag:3amproductions.net,2006-04-01:/portfolio/hbsav3</guid>
+    <title><![CDATA[HBSA v3.0]]></title>
+    <link>http://3amproductions.net/portfolio/hbsav3</link>
+    <enclosure url="http://3amproductions.net/images/H3big01.jpg" type="image/gif" length="3000"/>
+    <enclosure url="http://3amproductions.net/images/H3big02.jpg" type="image/gif" length="3000"/>
+    <enclosure url="http://3amproductions.net/images/H3big03.jpg" type="image/gif" length="3000"/>
+    
+    
+    <category domain="http://3amproductions.net/xml/tags/">probono</category>
+    <category domain="http://3amproductions.net/xml/tags/">completed</category>
+    <category domain="http://3amproductions.net/xml/tags/">gil</category>
+    <pubDate>Sat, 01 Apr 2006 03:00:00 GMT
+</pubDate>
+    
+  <source url="http://3amproductions.net/atom">3AM Productions: Portfolio</source></item>
+<generator>Twilight Portfolio Management @3AM v0.1 (http://3amproductions.net/xml/twilight/) + Atom 1.0 XSLT Transform v1 (http://atom.geekhood.net/)</generator></channel>
+</rss>

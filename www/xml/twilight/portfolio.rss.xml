@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://3amproductions.net/xml/ns/twix/twixrss2html.xsl" type="text/xsl"?>
+<!--This is a comment that has been inserted because of the arrogance of IE7 and FireFox 2 developers that have decided that they don't need to honour a xml stylesheet instruction. Luckily the designers of these browsers use very brittle sniffing techniques that can be overridden by consuming the first 512 bytes of an xml file. This comment provides these essential 512 bytes of crud and destroys the nice simplicity and cleanliness of my Atom feed. This is a comment that has been inserted because of the arrogance of IE7 and FireFox 2 developers that have decided that they don't need to honour a xml stylesheet instruction. Luckily the designers of these browsers use very brittle sniffing techniques that can be overridden by consuming the first 512 bytes of an xml file. This comment provides these essential 512 bytes of crud and destroys the nice simplicity and cleanliness of my Atom feed. This is a comment that has been inserted because of the arrogance of IE7 and FireFox 2 developers that have decided that they don't need to honour a xml stylesheet instruction. Luckily the designers of these browsers use very brittle sniffing techniques that can be overridden by consuming the first 512 bytes of an xml file. This comment provides these essential 512 bytes of crud and destroys the nice simplicity and cleanliness of my Atom feed.-->
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>3AM Productions: Portfolio</title>
+    <link>http://3amproductions.net/portfolio</link>
+    <description>See how things look different @3AM.</description>
+    <lastBuildDate>Mon, 19 Nov 2007 03:00:00 -0500</lastBuildDate>
+    <dc:date>2007-11-19T03:00:00-05:00</dc:date>
+    <copyright>© 2005 Copyright 3AM Productions; 
+Creative Commons License: 
+Attribution Non-commercial Share Alike; 
+http://creativecommons.org/licenses/by-nc-sa/2.5/</copyright>
+    <image>
+      <url>http://3amproductions.net/images/favicon.gif</url>
+      <title>3AM Productions: Portfolio</title>
+      <link>http://3amproductions.net/portfolio</link>
+      <width>16</width>
+      <height>16</height>
+    </image>
+    <generator>Twilight Portfolio Management @3AM</generator>
+    <language>en-US</language>
+    <rating/>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title>3AM Productions v1.0</title>
+      <link>http://3amproductions.net/portfolio/threeamv1</link>
+      <guid isPermaLink="false">tag:3amproductions.net,2005-05-01:/portfolio/threeamv1</guid>
+      <description>This is the original site that 3AM Productions began with. We chose a color scheme that we liked to reflect our personality and the name of our company. In one week we went from having nothing to what you see here. We used this as an opportunity to create a site under pressure.</description>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>This is the original site that 3AM Productions began with. We chose a color scheme that we liked to reflect our personality and the name of our company. In one week we went from having nothing to what you see here. We used this as an opportunity to create a site under pressure.<br/><a href="http://threeam.3amproductions.net" class="livesite" title="3AM Productions v1.0">Live Site</a></p>
+        <ul>
+          <li>
+            <img src="http://3amproductions.net/images/3big01.gif" alt="screenshot of 3AM Productions v1.0" title="screenshot of 3AM Productions v1.0"/>
+          </li>
+          <li>
+            <img src="http://3amproductions.net/images/3big02.gif" alt="screenshot of 3AM Productions v1.0" title="screenshot of 3AM Productions v1.0"/>
+          </li>
+          <li>
+            <img src="http://3amproductions.net/images/3big03.gif" alt="screenshot of 3AM Productions v1.0" title="screenshot of 3AM Productions v1.0"/>
+          </li>
+        </ul>
+      </div>
+      <content:encoded><![CDATA[<div xmlns="http://www.w3.org/1999/xhtml"><p>This is the original site that 3AM Productions began with. We chose a color scheme that we liked to reflect our personality and the name of our company. In one week we went from having nothing to what you see here. We used this as an opportunity to create a site under pressure.<br/><a href="http://threeam.3amproductions.net" class="livesite" title="3AM Productions v1.0">Live Site</a></p><ul><li><img src="http://3amproductions.net/images/3big01.gif" alt="screenshot of 3AM Productions v1.0" title="screenshot of 3AM Productions v1.0"/></li><li><img src="http://3amproductions.net/images/3big02.gif" alt="screenshot of 3AM Productions v1.0" title="screenshot of 3AM Productions v1.0"/></li><li><img src="http://3amproductions.net/images/3big03.gif" alt="screenshot of 3AM Productions v1.0" title="screenshot of 3AM Productions v1.0"/></li></ul></div>]]></content:encoded>
+      <media:group>
+        <media:content url="http://3amproductions.net/images/3big01.gif" type="image/gif" medium="image" expression="full" height="250" width="480"/>
+        <media:thumbnail url="http://3amproductions.net/images/3alt01.gif" height="75" width="150"/>
+      </media:group>
+      <media:group>
+        <media:content url="http://3amproductions.net/images/3big02.gif" type="image/gif" medium="image" expression="full" height="250" width="480"/>
+        <media:thumbnail url="http://3amproductions.net/images/3alt02.gif" height="75" width="150"/>
+      </media:group>
+      <media:group>
+        <media:content url="http://3amproductions.net/images/3big03.gif" type="image/gif" medium="image" expression="full" height="250" width="480"/>
+        <media:thumbnail url="http://3amproductions.net/images/3alt03.gif" height="75" width="150"/>
+      </media:group>
+      <pubDate>Sun, 01 May 2005 03:00:00 -0500</pubDate>
+      <dcterms:modified>2005-05-07T03:00:00-05:00</dcterms:modified>
+      <category domain="http://3amproductions.net/xml/tags/3am">3am</category>
+      <category domain="http://3amproductions.net/xml/tags/completed">completed</category>
+      <source url="http://3amproductions.net/rss">3AM Productions: Portfolio</source>
+    </item>
+    <item>
+      <title>3AM Productions v2.0</title>
+      <link>http://3amproductions.net/portfolio/threeamv2</link>
+      <guid isPermaLink="false">tag:3amproductions.net,2006-04-01:/portfolio/threeamv2</guid>
+      <description>This is our current site which we made as an update and also to be a part of the May 2006 CSS Reboot. We have gone with a minimalistic approach giving the user a bold visual experience while separating the content without the use of heavy images.</description>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>This is our current site which we made as an update and also to be a part of the <a href="http://www.cssreboot.com" title="see the reboots" rel="external">May 2006 CSS Reboot</a>. We have gone with a minimalistic approach giving the user a bold visual experience while separating the content without the use of heavy images.<br/><a href="http://3amproductions.net" class="livesite" title="3AM Productions v2.0">Live Site</a></p>
+        <ul>
+          <li>
+            <img src="http://3amproductions.net/images/3v2big01.gif" alt="screenshot of 3AM Productions v2.0" title="screenshot of 3AM Productions v2.0"/>
+          </li>
+          <li>
+            <img src="http://3amproductions.net/images/3v2big02.gif" alt="screenshot of 3AM Productions v2.0" title="screenshot of 3AM Productions v2.0"/>
+          </li>
+          <li>
+            <img src="http://3amproductions.net/images/3v2big03.gif" alt="screenshot of 3AM Productions v2.0" title="screenshot of 3AM Productions v2.0"/>
+          </li>
+        </ul>
+      </div>
+      <content:encoded><![CDATA[<div xmlns="http://www.w3.org/1999/xhtml"><p>This is our current site which we made as an update and also to be a part of the <a href="http://www.cssreboot.com" title="see the reboots" rel="external">May 2006 CSS Reboot</a>. We have gone with a minimalistic approach giving the user a bold visual experience while separating the content without the use of heavy images.<br/><a href="http://3amproductions.net" class="livesite" title="3AM Productions v2.0">Live Site</a></p><ul><li><img src="http://3amproductions.net/images/3v2big01.gif" alt="screenshot of 3AM Productions v2.0" title="screenshot of 3AM Productions v2.0"/></li><li><img src="http://3amproductions.net/images/3v2big02.gif" alt="screenshot of 3AM Productions v2.0" title="screenshot of 3AM Productions v2.0"/></li><li><img src="http://3amproductions.net/images/3v2big03.gif" alt="screenshot of 3AM Productions v2.0" title="screenshot of 3AM Productions v2.0"/></li></ul></div>]]></content:encoded>
+      <media:group>
+        <media:content url="http://3amproductions.net/images/3v2big01.gif" type="image/gif" medium="image" expression="full" height="250" width="480"/>
+        <media:thumbnail url="http://3amproductions.net/images/3v2alt01.gif" height="75" width="150"/>
+      </media:group>
+      <media:group>
+        <media:content url="http://3amproductions.net/images/3v2big02.gif" type="image/gif" medium="image" expression="full" height="250" width="480"/>
+        <media:thumbnail url="http://3amproductions.net/images/3v2alt02.gif" height="75" width="150"/>
+      </media:group>
+      <media:group>
+        <media:content url="http://3amproductions.net/images/3v2big03.gif" type="image/gif" medium="image" expression="full" height="250" width="480"/>
+        <media:thumbnail url="http://3amproductions.net/images/3v2alt03.gif" height="75" width="150"/>
+      </media:group>
+      <pubDate>Sat, 01 Apr 2006 03:00:00 -0500</pubDate>
+      <dcterms:modified>2006-05-01T03:00:00-05:00</dcterms:modified>
+      <category domain="http://3amproductions.net/xml/tags/3am">3am</category>
+      <category domain="http://3amproductions.net/xml/tags/managed">managed</category>
+      <source url="http://3amproductions.net/rss">3AM Productions: Portfolio</source>
+    </item>
+    <item>
+      <title>RenegadeLatino v1.0</title>
+      <link>http://3amproductions.net/portfolio/renegade</link>
+      <guid isPermaLink="false">tag:3amproductions.net,2005-01-01:/portfolio/renegade</guid>
+      <description>'RenegadeLatino' is our client's personal site. We were commissioned to create a design to reflect the dual identity of the client while maintaining a 'dark' scheme. The site also includes interactive features, such as the navigation, to engage the visitor in a more 'hands on' experience.</description>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>'RenegadeLatino' is our client's personal site. We were commissioned to create a design to reflect the dual identity of the client while maintaining a 'dark' scheme. The site also includes interactive features, such as the navigation, to engage the visitor in a more 'hands on' experience.</p>
+        <ul>
+          <li>
+            <img src="http://3amproductions.net/images/Rbig01.gif" alt="screenshot of RenegadeLatino v1.0" title="screenshot of RenegadeLatino v1.0"/>
+          </li>
+          <li>
+            <img src="http://3amproductions.net/images/Rbig02.gif" alt="screenshot of RenegadeLatino v1.0" title="screenshot of RenegadeLatino v1.0"/>
+          </li>
+          <li>
+            <img src="http://3amproductions.net/images/Rbig03.gif" alt="screenshot of RenegadeLatino v1.0" title="screenshot of RenegadeLatino v1.0"/>
+          </li>
+        </ul>
+      </div>
+      <content:encoded><![CDATA[<div xmlns="http://www.w3.org/1999/xhtml"><p>'RenegadeLatino' is our client's personal site. We were commissioned to create a design to reflect the dual identity of the client while maintaining a 'dark' scheme. The site also includes interactive features, such as the navigation, to engage the visitor in a more 'hands on' experience.</p><ul><li><img src="http://3amproductions.net/images/Rbig01.gif" alt="screenshot of RenegadeLatino v1.0" title="screenshot of RenegadeLatino v1.0"/></li><li><img src="http://3amproductions.net/images/Rbig02.gif" alt="screenshot of RenegadeLatino v1.0" title="screenshot of RenegadeLatino v1.0"/></li><li><img src="http://3amproductions.net/images/Rbig03.gif" alt="screenshot of RenegadeLatino v1.0" title="screenshot of RenegadeLatino v1.0"/></li></ul></div>]]></content:encoded>
+      <media:group>
+        <media:content url="http://3amproductions.net/images/Rbig01.gif" type="image/gif" medium="image" expression="full" height="250" width="480"/>
+        <media:thumbnail url="http://3amproductions.net/images/Ralt01.gif" height="75" width="150"/>
+      </media:group>
+      <media:group>
+        <media:content url="http://3amproductions.net/images/Rbig02.gif" type="image/gif" medium="image" expression="full" height="250" width="480"/>
+        <media:thumbnail url="http://3amproductions.net/images/Ralt02.gif" height="75" width="150"/>
+      </media:group>
+      <media:group>
+        <media:content url="http://3amproductions.net/images/Rbig03.gif" type="image/gif" medium="image" expression="full" height="250" width="480"/>
+        <media:thumbnail url="http://3amproductions.net/images/Ralt03.gif" height="75" width="150"/>
+      </media:group>
+      <pubDate>Sat, 01 Jan 2005 03:00:00 -0500</pubDate>
+      <dcterms:modified>2006-06-06T03:00:00-05:00</dcterms:modified>
+      <category domain="http://3amproductions.net/xml/tags/personal">personal</category>
+      <category domain="http://3amproductions.net/xml/tags/managed">managed</category>
+      <category domain="http://3amproductions.net/xml/tags/gil">gil</category>
+      <source url="http://3amproductions.net/rss">3AM Productions: Portfolio</source>
+    </item>
+    <item>
+      <title>RenegadeLatino v2.0</title>
+      <link>http://3amproductions.net/portfolio/renegadev2</link>
+      <guid isPermaLink="false">tag:3amproductions.net,2007-01-01:/portfolio/renegadev2</guid>
+      <description>This is the second version of the RenegadeLatino site we have made. It has a thin fixed-width single column made because the client had only blog posts to display and wanted something that was simple. The site has a dark theme overall using blues and reds to highlight certain elements. Please Note: We make all our sites compliant with all browsers, but the client specified use of .png images and a non-compliance with IE previous to 7.</description>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>This is the second version of the RenegadeLatino site we have made. It has a thin fixed-width single column made because the client had only blog posts to display and wanted something that was simple. The site has a dark theme overall using blues and reds to highlight certain elements. Please Note: We make all our sites compliant with all browsers, but the client specified use of .png images and a non-compliance with <acronym title="Internet Explorer">IE</acronym> previous to 7.<br/><a href="http://www.renegadelatino.com" class="livesite" title="RenegadeLatino v2.0">Live Site</a></p>
+        <ul>
+          <li>
+            <img src="http://3amproductions.net/images/Rv2big01.jpg" alt="screenshot of RenegadeLatino v2.0" title="screenshot of RenegadeLatino v2.0"/>
+          </li>
+          <li>
+            <img src="http://3amproductions.net/images/Rv2big02.jpg" alt="screenshot of RenegadeLatino v2.0" title="screenshot of RenegadeLatino v2.0"/>
+          </li>
+          <li>
+            <img src="http://3amproductions.net/images/Rv2big03.jpg" alt="screenshot of RenegadeLatino v2.0" title="screenshot of RenegadeLatino v2.0"/>
+          </li>
+        </ul>
+      </div>
+      <content:encoded><![CDATA[<div xmlns="http://www.w3.org/1999/xhtml"><p>This is the second version of the RenegadeLatino site we have made. It has a thin fixed-width single column made because the client had only blog posts to display and wanted something that was simple. The site has a dark theme overall using blues and reds to highlight certain elements. Please Note: We make all our sites compliant with all browsers, but the client specified use of .png images and a non-compliance with <acronym title="Internet Explorer">IE</acronym> previous to 7.<br/><a href="http://www.renegadelatino.com" class="livesite" title="RenegadeLatino v2.0">Live Site</a></p><ul><li><img src="http://3amproductions.net/images/Rv2big01.jpg" alt="screenshot of RenegadeLatino v2.0" title="screenshot of RenegadeLatino v2.0"/></li><li><img src="http://3amproductions.net/images/Rv2big02.jpg" alt="screenshot of RenegadeLatino v2.0" title="screenshot of RenegadeLatino v2.0"/></li><li><img src="http://3amproductions.net/images/Rv2big03.jpg" alt="screenshot of RenegadeLatino v2.0" title="screenshot of RenegadeLatino v2.0"/></li></ul></div>]]></content:encoded>
+      <media:group>
+        <media:content url="http://3amproductions.net/images/Rv2big01.jpg" type="image/jpeg" medium="image" expression="full" height="250" width="480"/>
+        <media:thumbnail url="http://3amproductions.net/images/Rv2alt01.jpg" height="75" width="150"/>
+      </media:group>
+      <media:group>
+        <media:content url="http://3amproductions.net/images/Rv2big02.jpg" type="image/jpeg" medium="image" expression="full" height="250" width="480"/>
+        <media:thumbnail url="http://3amproductions.net/images/Rv2alt02.jpg" height="75" width="150"/>
+      </media:group>
+      <media:group>
+        <media:content url="http://3amproductions.net/images/Rv2big03.jpg" type="image/jpeg" medium="image" expression="full" height="250" width="480"/>
+        <media:thumbnail url="http://3amproductions.net/images/Rv2alt03.jpg" height="75" width="150"/>
+      </media:group>
+      <pubDate>Mon, 01 Jan 2007 03:00:00 -0500</pubDate>
+      <dcterms:modified>2007-01-01T03:00:00-05:00</dcterms:modified>
+      <category domain="http://3amproductions.net/xml/tags/personal">personal</category>
+      <category domain="http://3amproductions.net/xml/tags/managed">managed</category>
+      <category domain="http://3amproductions.net/xml/tags/gil">gil</category>
+      <source url="http://3amproductions.net/rss">3AM Productions: Portfolio</source>
+    </item>
+    <item>
+      <title>Latino Studies</title>
+      <link>http://3amproductions.net/portfolio/latinostudiesv1</link>
+      <guid isPermaLink="false">tag:3amproductions.net,2006-03-08:/portfolio/latinostudiesv1</guid>
+      <description>This site was created as part of a project for a Latino/a Studies class at the Ohio State University. It showcases information gathered during a quarter long project in collecting information from web sites of Latino/a Studies departments at universities across the country. Interviews were also done with key faculty and staff at tOSU and conclusions were drawn. The design was simple, straghtforward and made with buckeye colors.</description>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>This site was created as part of a project for a Latino/a Studies class at the Ohio State University. It showcases information gathered during a quarter long project in collecting information from web sites of Latino/a Studies departments at universities across the country. Interviews were also done with key faculty and staff at <acronym title="The Ohio State University">tOSU</acronym> and conclusions were drawn. The design was simple, straghtforward and made with buckeye colors.<br/><a href="http://latinostudies.renegadelatino.com" class="livesite" title="Latino Studies">Live Site</a></p>
+        <ul>
+          <li>
+            <img src="http://3amproductions.net/images/LSbig01.png" alt="screenshot of Latino Studies" title="screenshot of Latino Studies"/>
+          </li>
+          <li>
+            <img src="http://3amproductions.net/images/LSbig02.png" alt="screenshot of Latino Studies" title="screenshot of Latino Studies"/>
+          </li>
+          <li>
+            <img src="http://3amproductions.net/images/LSbig03.png" alt="screenshot of Latino Studies" title="screenshot of Latino Studies"/>
+          </li>
+        </ul>
+      </div>
+      <content:encoded><![CDATA[<div xmlns="http://www.w3.org/1999/xhtml"><p>This site was created as part of a project for a Latino/a Studies class at the Ohio State University. It showcases information gathered during a quarter long project in collecting information from web sites of Latino/a Studies departments at universities across the country. Interviews were also done with key faculty and staff at <acronym title="The Ohio State University">tOSU</acronym> and conclusions were drawn. The design was simple, straghtforward and made with buckeye colors.<br/><a href="http://latinostudies.renegadelatino.com" class="livesite" title="Latino Studies">Live Site</a></p><ul><li><img src="http://3amproductions.net/images/LSbig01.png" alt="screenshot of Latino Studies" title="screenshot of Latino Studies"/></li><li><img src="http://3amproductions.net/images/LSbig02.png" alt="screenshot of Latino Studies" title="screenshot of Latino Studies"/></li><li><img src="http://3amproductions.net/images/LSbig03.png" alt="screenshot of Latino Studies" title="screenshot of Latino Studies"/></li></ul></div>]]></content:encoded>
+      <media:group>
+        <media:content url="http://3amproductions.net/images/LSbig01.png" type="image/png" medium="image" expression="full" height="250" width="480"/>
+        <media:thumbnail url="http://3amproductions.net/images/LSalt01.png" height="75" width="150"/>
+      </media:group>
+      <media:group>
+        <media:content url="http://3amproductions.net/images/LSbig02.png" type="image/png" medium="image" expression="full" height="250" width="480"/>
+        <media:thumbnail url="http://3amproductions.net/images/LSalt02.png" height="75" width="150"/>
+      </media:group>
+      <media:group>
+        <media:content url="http://3amproductions.net/images/LSbig03.png" type="image/png" medium="image" expression="full" height="250" width="480"/>
+        <media:thumbnail url="http://3amproductions.net/images/LSalt03.png" height="75" width="150"/>
+      </media:group>
+      <pubDate>Wed, 08 Mar 2006 03:00:00 -0500</pubDate>
+      <dcterms:modified>2006-03-08T03:00:00-05:00</dcterms:modified>
+      <category domain="http://3amproductions.net/xml/tags/personal">personal</category>
+      <category domain="http://3amproductions.net/xml/tags/completed">completed</category>
+      <category domain="http://3amproductions.net/xml/tags/gil">gil</category>
+      <source url="http://3amproductions.net/rss">3AM Productions: Portfolio</source>
+    </item>
+    <item>
+      <title>HBSA v2.0</title>
+      <link>http://3amproductions.net/portfolio/hbsav2</link>
+      <guid isPermaLink="false">tag:3amproductions.net,2006-04-01:/portfolio/hbsav2</guid>
+      <description>This is the second design created for the HBSA at OSU. This showcases the next upcoming event but is also more colorful to include the more invigorating feel of the group. This design, as opposed to the first design, was meant to showcase more of the vibrancy of the group itself as opposed to reflecting OSU.</description>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>This is the second design created for the <acronym title="Hispanic Business Student Association">HBSA</acronym> at <acronym title="The Ohio State University">OSU</acronym>. This showcases the next upcoming event but is also more colorful to include the more invigorating feel of the group. This design, as opposed to the first design, was meant to showcase more of the vibrancy of the group itself as opposed to reflecting <acronym title="The Ohio State University">OSU</acronym>.</p>
+        <ul>
+          <li>
+            <img src="http://3amproductions.net/images/H2big01.gif" alt="screenshot of HBSA v2.0" title="screenshot of HBSA v2.0"/>
+          </li>
+          <li>
+            <img src="http://3amproductions.net/images/H2big02.gif" alt="screenshot of HBSA v2.0" title="screenshot of HBSA v2.0"/>
+          </li>
+          <li>
+            <img src="http://3amproductions.net/images/H2big03.gif" alt="screenshot of HBSA v2.0" title="screenshot of HBSA v2.0"/>
+          </li>
+        </ul>
+      </div>
+      <content:encoded><![CDATA[<div xmlns="http://www.w3.org/1999/xhtml"><p>This is the second design created for the <acronym title="Hispanic Business Student Association">HBSA</acronym> at <acronym title="The Ohio State University">OSU</acronym>. This showcases the next upcoming event but is also more colorful to include the more invigorating feel of the group. This design, as opposed to the first design, was meant to showcase more of the vibrancy of the group itself as opposed to reflecting <acronym title="The Ohio State University">OSU</acronym>.</p><ul><li><img src="http://3amproductions.net/images/H2big01.gif" alt="screenshot of HBSA v2.0" title="screenshot of HBSA v2.0"/></li><li><img src="http://3amproductions.net/images/H2big02.gif" alt="screenshot of HBSA v2.0" title="screenshot of HBSA v2.0"/></li><li><img src="http://3amproductions.net/images/H2big03.gif" alt="screenshot of HBSA v2.0" title="screenshot of HBSA v2.0"/></li></ul></div>]]></content:encoded>
+      <media:group>
+        <media:content url="http://3amproductions.net/images/H2big01.gif" type="image/gif" medium="image" expression="full" height="250" width="480"/>
+        <media:thumbnail url="http://3amproductions.net/images/H2alt01.gif" height="75" width="150"/>
+      </media:group>
+      <media:group>
+        <media:content url="http://3amproductions.net/images/H2big02.gif" type="image/gif" medium="image" expression="full" height="250" width="480"/>
+        <media:thumbnail url="http://3amproductions.net/images/H2alt02.gif" height="75" width="150"/>
+      </media:group>
+      <media:group>
+        <media:content url="http://3amproductions.net/images/H2big03.gif" type="image/gif" medium="image" expression="full" height="250" width="480"/>
+        <media:thumbnail url="http://3amproductions.net/images/H2alt03.gif" height="75" width="150"/>
+      </media:group>
+      <pubDate>Sat, 01 Apr 2006 03:00:00 -0500</pubDate>
+      <dcterms:modified>2006-04-03T03:00:00-05:00</dcterms:modified>
+      <category domain="http://3amproductions.net/xml/tags/probono">probono</category>
+      <category domain="http://3amproductions.net/xml/tags/completed">completed</category>
+      <category domain="http://3amproductions.net/xml/tags/gil">gil</category>
+      <source url="http://3amproductions.net/rss">3AM Productions: Portfolio</source>
+    </item>
+    <item>
+      <title>HBSA v3.0</title>
+      <link>http://3amproductions.net/portfolio/hbsav3</link>
+      <guid isPermaLink="false">tag:3amproductions.net,2006-04-01:/portfolio/hbsav3</guid>
+      <description>This is the final version of the site that was approved by the client. They opted for a fixed size site in all dimensions, so to allow for maximization of content, special effects were used to expand and contract the text area. Lightbox is used to handle the center column of images available on all pages of the site.</description>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>This is the final version of the site that was approved by the client. They opted for a fixed size site in all dimensions, so to allow for maximization of content, special effects were used to expand and contract the text area. <a href="http://www.huddletogether.com/projects/lightbox/" title="Lightbox JavaScript" rel="external">Lightbox</a> is used to handle the center column of images available on all pages of the site.<br/><a href="http://hbsa.org.ohio-state.edu" class="livesite" title="HBSA v3.0">Live Site</a></p>
+        <ul>
+          <li>
+            <img src="http://3amproductions.net/images/H3big01.jpg" alt="screenshot of HBSA v3.0" title="screenshot of HBSA v3.0"/>
+          </li>
+          <li>
+            <img src="http://3amproductions.net/images/H3big02.jpg" alt="screenshot of HBSA v3.0" title="screenshot of HBSA v3.0"/>
+          </li>
+          <li>
+            <img src="http://3amproductions.net/images/H3big03.jpg" alt="screenshot of HBSA v3.0" title="screenshot of HBSA v3.0"/>
+          </li>
+        </ul>
+      </div>
+      <content:encoded><![CDATA[<div xmlns="http://www.w3.org/1999/xhtml"><p>This is the final version of the site that was approved by the client. They opted for a fixed size site in all dimensions, so to allow for maximization of content, special effects were used to expand and contract the text area. <a href="http://www.huddletogether.com/projects/lightbox/" title="Lightbox JavaScript" rel="external">Lightbox</a> is used to handle the center column of images available on all pages of the site.<br/><a href="http://hbsa.org.ohio-state.edu" class="livesite" title="HBSA v3.0">Live Site</a></p><ul><li><img src="http://3amproductions.net/images/H3big01.jpg" alt="screenshot of HBSA v3.0" title="screenshot of HBSA v3.0"/></li><li><img src="http://3amproductions.net/images/H3big02.jpg" alt="screenshot of HBSA v3.0" title="screenshot of HBSA v3.0"/></li><li><img src="http://3amproductions.net/images/H3big03.jpg" alt="screenshot of HBSA v3.0" title="screenshot of HBSA v3.0"/></li></ul></div>]]></content:encoded>
+      <media:group>
+        <media:content url="http://3amproductions.net/images/H3big01.jpg" type="image/jpeg" medium="image" expression="full" height="250" width="480"/>
+        <media:thumbnail url="http://3amproductions.net/images/H3alt01.jpg" height="75" width="150"/>
+      </media:group>
+      <media:group>
+        <media:content url="http://3amproductions.net/images/H3big02.jpg" type="image/jpeg" medium="image" expression="full" height="250" width="480"/>
+        <media:thumbnail url="http://3amproductions.net/images/H3alt02.jpg" height="75" width="150"/>
+      </media:group>
+      <media:group>
+        <media:content url="http://3amproductions.net/images/H3big03.jpg" type="image/jpeg" medium="image" expression="full" height="250" width="480"/>
+        <media:thumbnail url="http://3amproductions.net/images/H3alt03.jpg" height="75" width="150"/>
+      </media:group>
+      <pubDate>Sat, 01 Apr 2006 03:00:00 -0500</pubDate>
+      <dcterms:modified>2006-04-04T03:00:00-05:00</dcterms:modified>
+      <category domain="http://3amproductions.net/xml/tags/probono">probono</category>
+      <category domain="http://3amproductions.net/xml/tags/completed">completed</category>
+      <category domain="http://3amproductions.net/xml/tags/gil">gil</category>
+      <source url="http://3amproductions.net/rss">3AM Productions: Portfolio</source>
+    </item>
+  </channel>
+</rss>

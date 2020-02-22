@@ -1,0 +1,111 @@
+/* Date picker specific styles follow */
+
+a.date-picker {
+	width: 16px;
+	height: 16px;
+	border: none;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+	/*float: left;*/
+	overflow: hidden;
+	cursor: pointer;
+	background: url(/images/calendar.png) no-repeat;
+	display:-moz-inline-block;
+	vertical-align:top;
+}
+a.date-picker:hover, a.date-picker:focus {
+	background-color:transparent;
+}
+a.date-picker span {
+	margin: 0 0 0 -2000px;
+}
+div.date-picker-holder, div.date-picker-holder * {
+	margin: 0;
+	padding: 0;
+}
+div.date-picker-holder {
+	position: relative;
+	display:-moz-inline-block;
+	vertical-align:middle;
+	width:1px;
+}
+div.date-picker-holder input {
+	float: left;
+}
+div.popup-calendar {
+	display: none;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: -16px; /* value for IE */
+	padding: 4px;
+	border: 2px solid #FFFFFF;
+	background: #001321;
+	color: #FFFFFF;
+	overflow:hidden;
+	width: 163px;
+	text-transform:none;
+}
+html>body div.popup-calendar {
+	left: 99px; /* value for decent browsers */
+}
+div.popup-calendar div.link-close {
+	float: right;
+}
+div.popup-calendar div.link-prev {
+	float: left;
+}
+div.popup-calendar h3 {
+	font-size: 1.3em;
+	margin: 2px 0 5px 3px;
+}
+div.popup-calendar div.link-next {
+	float: right;
+}
+div.popup-calendar div a {
+	padding: 1px 2px;
+	color: #FFFFFF;
+}
+div.popup-calendar div a:hover {
+	background-color: #FFFFFF;
+	color: #001321;
+}
+div.popup-calendar table {
+	margin: 0;
+}
+* html div.popup-calendar table {
+	display: inline;
+}
+div.popup-calendar table th, div.popup-calendar table td {
+	background: #00303C;
+	width: 21px;
+	height: 17px;
+	text-align: center;
+}
+div.popup-calendar table td.inactive {
+	color: #aaa;
+	padding: 1px 0 0;
+}
+div.popup-calendar table th.weekend, div.popup-calendar table td.weekend {
+	background: #00303C;
+}
+div.popup-calendar a {
+	text-transform:lowercase;
+}
+div.popup-calendar table td a {
+	display: block;
+	border: 1px solid #eee;
+	width: 19px;
+	height: 15px;
+	text-decoration: none;
+	color: #FFFFFF;
+	padding-bottom:5px;
+}
+div.popup-calendar table td.today a {
+	border-color: #FFFFFF;
+}
+div.popup-calendar table td a.selected, div.popup-calendar table td a:hover {
+	background: #FFFFFF; 
+	color: #001321;
+}

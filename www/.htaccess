@@ -1,0 +1,86 @@
+# Redirects for Missing Files
+Redirect 301 /procedure.php http://3amproductions.net/approach
+Redirect 301 /philosophy.php http://3amproductions.net/approach
+Redirect 301 /xml/portfolio.rss.php http://3amproductions.net/rss
+Redirect 301 /favicon.ico http://3amproductions.net/images/favicon.ico
+Redirect 301 /xml/rsscrape.xsl http://3amproductions.net/xml/parss.xsl
+Redirect gone /xml/jason.rdf
+Redirect gone /xml/gilbert.rdf
+Redirect gone /xml/vcard.vcf.php
+Redirect gone /xml/vcard.xml.php
+Redirect gone /xml/cc-license.rdf
+
+
+# Custom Error Docs
+ErrorDocument 400 /error.php
+ErrorDocument 401 /error.php
+ErrorDocument 403 /error.php
+ErrorDocument 404 /error.php
+ErrorDocument 410 /error.php
+ErrorDocument 500 /error.php
+ErrorDocument 501 /error.php
+ErrorDocument 502 /error.php
+ErrorDocument 503 /error.php
+
+RewriteEngine On
+
+# Rewrite Rules for Error Handler & PHP Config
+RewriteRule ^error/feed/tags(/(!?[0-9]{3},?)+)?/?$ /xml/errorlogfeed.php/tags/$1
+RewriteRule ^error/feed(/([0-9]+))?/?$ /xml/errorlogfeed.php$1
+RewriteRule ^error/log/tags(/(!?[0-9]{3},?)+)?/?$ /error.php/log/tags/$1
+RewriteRule ^error/log(/([0-9]+))?/?$ /error.php/log/$1
+RewriteRule ^phpinfo/sec/?$ /phpinfo.php/sec
+
+# Rewrite Rules for Portfolio
+RewriteRule ^portfolio/?$ /portfolio.php
+RewriteRule ^portfolio/([a-zA-Z0-9]+)/?$ /portfolio.php?p=$1
+RewriteRule ^portfolio/([a-zA-Z0-9]+)/([0-9]+)/?$ /portfolio.php?p=$1&i=$2
+
+# Rewrite Rules for Twilight
+RewriteRule ^twilight/?$ /xml/twilight/
+RewriteRule ^(xml/)?(twilight/)?(feed/)?(rss|atom|atomrss|twixrss|rsshtml|rssxhtml|atomhtml|atomxhtml|ajax|json|clean)(/[a-zA-Z0-9,]+(/[0-9])?)?/?$ /xml/twilight/feed.php/$4$5
+RewriteRule ^(xml/)?tags(/[a-zA-Z0-9]+)?/?$ /xml/tags/index.php$2
+
+# Rewrite Rules for XMDP
+RewriteRule ^(xml/)?xmdp/?$ /xml/xmdp.php
+
+# Rewrite Rules for 3AM Main pages
+#RewriteRule ^([a-zA-Z0-9]+)/?$ /$1\.php
+RewriteRule ^(about|approach|client|contact|error|gilbert|help|index|jason|login|portfolio|phpinfo|philosophy)$ /$1\.php
+
+
+##############################
+### GZip with mod_deflate
+##############################
+# text/ mime-types (plain,html,css,javascript)
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/javascript text/css application/xml application/xhtml+xml application/atom+xml application/xslt+xml application/rdf+xml application/xml-dtd application/javascript application/x-javascript
+# application/ mime-types (xml,xhtml,atom,rdf,xslt,dtd,javascript)
+#AddOutputFilterByType DEFLATE  
+
+
+##############################
+### Type Handlers
+##############################
+# use the PHP5 CGI
+AddType php5-cgi .html .htm .php .inc
+# use proper mime-type for JS
+AddType application/javascript js
+
+
+##############################
+### ETags
+##############################
+FileETag MTime Size
+
+
+##############################
+### Expires By Type
+##############################
+ExpiresActive On
+ExpiresDefault "access plus 1 week"
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType application/javascript "access plus 1 week"
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType image/x-icon "access plus 1 month"

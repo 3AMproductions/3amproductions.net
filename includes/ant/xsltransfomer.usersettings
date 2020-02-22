@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usersettings currentTransformer="Saxon 8.4">
+<transformer name="Saxon 8.4">
+<output-properties>
+<output-property key="indent" name="INDENT" value="yes"/>
+<output-property key="{http://saxon.sf.net/}indent-spaces" name="INDENT_SPACES" value="4"/>
+</output-properties>
+<features/>
+</transformer>
+<transformer name="Apache Xalan-J 2">
+<output-properties>
+<output-property key="{http://xml.apache.org/xslt}indent-amount" name="S_KEY_INDENT_AMOUNT" value="4"/>
+<output-property key="indent" name="INDENT" value="yes"/>
+</output-properties>
+<features/>
+</transformer>
+<transformer name="Default Transformer">
+<output-properties>
+<output-property key="indent" name="INDENT" value="yes"/>
+</output-properties>
+<features/>
+</transformer>
+</usersettings>

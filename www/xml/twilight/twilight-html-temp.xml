@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="project">
+	<h2 class="name open-project">3AM Productions v2.0</h2>
+	<a class="delete" href="project" title="Delete this Project" style="display: block;">
+		<span>Delete</span>
+	</a>
+	<form action="portfolio.php" style="display: block;">
+		<fieldset>
+			<label class="id">
+				<span>ID</span>
+				<input type="text" name="id" value="threeamv2"/>
+			</label>
+			<label class="status">
+				<span>Status</span>
+				<select name="status">
+					<optgroup label="Status">
+						<option value="completed">Completed</option>
+						<option value="draft">Draft</option>
+						<option value="hold">On Hold</option>
+						<option value="managed" selected="selected">Managed</option>
+						<option value="progress">In Progress</option>
+						<option value="terminated">Terminated</option>
+					</optgroup>
+				</select>
+			</label>
+		</fieldset>
+		<fieldset class="contact-info">
+			<legend>Contact Information</legend>
+			<label class="organization">
+				<span>Organization</span>
+				<input type="text" name="organization" value="3AM Productions"/>
+			</label>
+			<label class="abbr">
+				<span>Abbreviation</span>
+				<input type="text" name="abbr" value="3am"/>
+			</label>
+			<label class="url">
+				<span>Livesite</span>
+				<input type="text" name="livesite" value="" class="url"/>
+				<a class="preview" href="livesite" title="Preview this URL">
+					<span>Preview</span>
+				</a>
+			</label>
+			<fieldset class="contacts">
+				<legend>Contacts</legend>
+				<fieldset class="contact">
+					<a class="delete" href="contact" title="Delete this Contact">
+						<span>Delete</span>
+					</a>
+					<label class="name">
+						<span>Name</span>
+						<input type="text" name="name" value="Jason Karns"/>
+					</label>
+					<label class="jobtitle">
+						<span>Job Title</span>
+						<input type="text" name="jobtitle" value=""/>
+					</label>
+					<label class="role">
+						<span>Role</span>
+						<input type="text" name="role" value=""/>
+					</label>
+					<fieldset>
+						<legend>Email</legend>
+						<fieldset class="email">
+							<a class="delete" href="email" title="Delete this Email">
+								<span>Delete</span>
+							</a>
+							<label class="email">
+								<span>Email</span>
+								<input type="text" name="email" value="jason@3amproductions.net"/>
+							</label>
+							<label class="type">
+								<span>Email Type</span>
+								<select name="type">
+									<optgroup label="Email Type">
+										<option value="personal">Personal</option>
+										<option value="business" selected="selected">Business</option>
+									</optgroup>
+								</select>
+							</label>
+						</fieldset>
+						<a class="add" href="email" title="Add Email">
+							<span>Add</span>
+						</a>
+					</fieldset>
+					<fieldset>
+						<legend>Phone</legend>
+						<a class="add" href="phone" title="Add Phone">
+							<span>Add</span>
+						</a>
+					</fieldset>
+					<fieldset>
+						<legend>Address</legend>
+						<fieldset class="address">
+							<a class="delete" href="address" title="Delete this Address">
+								<span>Delete</span>
+							</a>
+							<label class="type">
+								<span>Address Type</span>
+								<select name="type">
+									<optgroup label="Address Type">
+										<option value="home">Home</option>
+										<option value="work">Work</option>
+									</optgroup>
+								</select>
+							</label>
+							<label class="street1">
+								<span>Street 1</span>
+								<input type="text" name="street1" value=""/>
+							</label>
+							<label class="street2">
+								<span>Street 2</span>
+								<input type="text" name="street2" value=""/>
+							</label>
+							<label class="city">
+								<span>City</span>
+								<input type="text" name="city" value=""/>
+							</label>
+							<label class="state">
+								<span>State</span>
+								<input type="text" name="state" value=""/>
+							</label>
+							<label class="zip">
+								<span>Zip Code</span>
+								<input type="text" name="zip" value=""/>
+							</label>
+						</fieldset>
+						<fieldset class="address">
+							<a class="delete" href="address" title="Delete this Address">
+								<span>Delete</span>
+							</a>
+							<label class="type">
+								<span>Address Type</span>
+								<select name="type">
+									<optgroup label="Address Type">
+										<option value="home">Home</option>
+										<option value="work">Work</option>
+									</optgroup>
+								</select>
+							</label>
+							<label class="street1">
+								<span>Street 1</span>
+								<input type="text" name="street1" value=""/>
+							</label>
+							<label class="street2">
+								<span>Street 2</span>
+								<input type="text" name="street2" value=""/>
+							</label>
+							<label class="city">
+								<span>City</span>
+								<input type="text" name="city" value=""/>
+							</label>
+							<label class="state">
+								<span>State</span>
+								<input type="text" name="state" value=""/>
+							</label>
+							<label class="zip">
+								<span>Zip Code</span>
+								<input type="text" name="zip" value=""/>
+							</label>
+						</fieldset>
+						<a class="add" href="address" title="Add Address">
+							<span>Add</span>
+						</a>
+					</fieldset>
+				</fieldset>
+				<fieldset class="contact">
+					<a class="delete" href="contact" title="Delete this Contact">
+						<span>Delete</span>
+					</a>
+					<label class="name">
+						<span>Name</span>
+						<input type="text" name="name" value="Gilbert Velasquez"/>
+					</label>
+					<label class="jobtitle">
+						<span>Job Title</span>
+						<input type="text" name="jobtitle" value=""/>
+					</label>
+					<label class="role">
+						<span>Role</span>
+						<input type="text" name="role" value=""/>
+					</label>
+					<fieldset>
+						<legend>Email</legend>
+						<fieldset class="email">
+							<a class="delete" href="email" title="Delete this Email">
+								<span>Delete</span>
+							</a>
+							<label class="email">
+								<span>Email</span>
+								<input type="text" name="email" value="gilbert@3amproductions.net"/>
+							</label>
+							<label class="type">
+								<span>Email Type</span>
+								<select name="type">
+									<optgroup label="Email Type">
+										<option value="personal">Personal</option>
+										<option value="business" selected="selected">Business</option>
+									</optgroup>
+								</select>
+							</label>
+						</fieldset>
+						<a class="add" href="email" title="Add Email">
+							<span>Add</span>
+						</a>
+					</fieldset>
+					<fieldset>
+						<legend>Phone</legend>
+						<a class="add" href="phone" title="Add Phone">
+							<span>Add</span>
+						</a>
+					</fieldset>
+					<fieldset>
+						<legend>Address</legend>
+						<fieldset class="address">
+							<a class="delete" href="address" title="Delete this Address">
+								<span>Delete</span>
+							</a>
+							<label class="type">
+								<span>Address Type</span>
+								<select name="type">
+									<optgroup label="Address Type">
+										<option value="home" selected="selected">Home</option>
+										<option value="work">Work</option>
+									</optgroup>
+								</select>
+							</label>
+							<label class="street1">
+								<span>Street 1</span>
+								<input type="text" name="street1" value="a"/>
+							</label>
+							<label class="street2">
+								<span>Street 2</span>
+								<input type="text" name="street2" value="b"/>
+							</label>
+							<label class="city">
+								<span>City</span>
+								<input type="text" name="city" value="c"/>
+							</label>
+							<label class="state">
+								<span>State</span>
+								<input type="text" name="state" value="d"/>
+							</label>
+							<label class="zip">
+								<span>Zip Code</span>
+								<input type="text" name="zip" value="e"/>
+							</label>
+						</fieldset>
+						<a class="add" href="address" title="Add Address">
+							<span>Add</span>
+						</a>
+					</fieldset>
+				</fieldset>
+				<a class="add" href="contact" title="Add Contact">
+					<span>Add</span>
+				</a>
+			</fieldset>
+		</fieldset>
+		<fieldset class="management">
+			<legend>Management</legend>
+			<label class="started">
+				<span>Date Started</span>
+				<div class="date-picker-holder">
+					<div class="popup-calendar"/>
+					<input type="text" name="started" value="2006-04-01" class="date"/>
+					<a href="javascript:;" class="date-picker" title="Choose date">
+						<span>Choose date</span>
+					</a>
+				</div>
+			</label>
+			<label class="modified">
+				<span>Date Modified</span>
+				<div class="date-picker-holder">
+					<div class="popup-calendar"/>
+					<input type="text" name="modified" value="2006-05-01" class="date"/>
+					<a href="javascript:;" class="date-picker" title="Choose date">
+						<span>Choose date</span>
+					</a>
+				</div>
+			</label>
+			<label class="launched">
+				<span>Date Launched</span>
+				<div class="date-picker-holder">
+					<div class="popup-calendar"/>
+					<input type="text" name="launched" value="2006-05-01" class="date"/>
+					<a href="javascript:;" class="date-picker" title="Choose date">
+						<span>Choose date</span>
+					</a>
+				</div>
+			</label>
+			<label class="class">
+				<span>Class/Tag</span>
+				<select name="class">
+					<optgroup label="Tag">
+						<option value="3am" selected="selected">3am</option>
+						<option value="business">Business</option>
+						<option value="personal">Personal</option>
+						<option value="probono">Pro Bono</option>
+						<option value="private">Private</option>
+					</optgroup>
+				</select>
+			</label>
+			<label class="manager">
+				<span>Manager</span>
+				<select name="manager">
+					<optgroup label="Manager">
+						<option value="gil">Gilbert</option>
+						<option value="jason">Jason</option>
+					</optgroup>
+				</select>
+			</label>
+			<label class="directory">
+				<span>Directory</span>
+				<input type="text" name="directory" value=""/>
+			</label>
+			<label class="subdomain url">
+				<span>Subdomain</span>
+				<input type="text" name="subdomain" value="asdfasdf"/>
+				<a class="preview" href="subdomain" title="Preview this value">
+					<span>Preview</span>
+				</a>
+			</label>
+			<fieldset>
+				<legend>Notes</legend>
+				<fieldset class="note">
+					<a class="delete" href="note" title="Delete this Note">
+						<span>Delete</span>
+					</a>
+					<label class="modified">
+						<span>Modified</span>
+						<div class="date-picker-holder">
+							<div class="popup-calendar"/>
+							<div class="date-picker-holder">
+								<div class="popup-calendar"/>
+								<input type="text" name="modified" value="asdf" class="date"/>
+								<a href="javascript:;" class="date-picker" title="Choose date">
+									<span>Choose date</span>
+								</a>
+							</div>
+							<a href="javascript:;" class="date-picker" title="Choose date">
+								<span>Choose date</span>
+							</a>
+						</div>
+					</label>
+					<label class="by">
+						<span>By</span>
+						<select name="by">
+							<optgroup label="By">
+								<option value="gil" selected="selected">Gilbert</option>
+								<option value="jason">Jason</option>
+							</optgroup>
+						</select>
+					</label>
+					<label class="remarks">
+						<span>Remarks</span>
+						<textarea name="remarks" rows="3" cols="50">aasdf</textarea>
+					</label>
+				</fieldset>
+				<fieldset class="note">
+					<a class="delete" href="note" title="Delete this Note">
+						<span>Delete</span>
+					</a>
+					<label class="modified">
+						<span>Modified</span>
+						<div class="date-picker-holder">
+							<div class="popup-calendar"/>
+							<div class="date-picker-holder">
+								<div class="popup-calendar"/>
+								<input type="text" name="modified" value="asdf" class="date"/>
+								<a href="javascript:;" class="date-picker" title="Choose date">
+									<span>Choose date</span>
+								</a>
+							</div>
+							<a href="javascript:;" class="date-picker" title="Choose date">
+								<span>Choose date</span>
+							</a>
+						</div>
+					</label>
+					<label class="by">
+						<span>By</span>
+						<select name="by">
+							<optgroup label="By">
+								<option value="gil" selected="selected">Gilbert</option>
+								<option value="jason">Jason</option>
+							</optgroup>
+						</select>
+					</label>
+					<label class="remarks">
+						<span>Remarks</span>
+						<textarea name="remarks" rows="3" cols="50">aasdf</textarea>
+					</label>
+				</fieldset>
+				<a class="add" href="note" title="Add Note">
+					<span>Add</span>
+				</a>
+			</fieldset>
+		</fieldset>
+		<fieldset class="showcase">
+			<legend>Showcase</legend>
+			<label class="title">
+				<span>Showcase Title</span>
+				<input type="text" name="title" value="3AM Productions v2.0"/>
+			</label>
+			<label class="description">
+				<span>Description</span>
+				<textarea name="description" rows="5" cols="75">This is our current site which we made as an update and also to be a part of the &lt;a href="http://www.cssreboot.com" title="see the reboots" rel="external"&gt;May 2006 CSS Reboot&lt;/a&gt;. We have gone with a minimalistic approach giving the user a bold visual experience while separating the content without the use of heavy images.</textarea>
+			</label>
+			<fieldset>
+				<legend>Images</legend>
+				<fieldset class="feature">
+					<legend>Feature</legend>
+					<label class="src img">
+						<span>Main</span>
+						<input type="text" name="src" value="" class="url"/>
+						<a class="preview" href="image" title="Preview this Image">
+							<span>Preview</span>
+						</a>
+					</label>
+					<label class="thumbnail img">
+						<span>Thumbnail</span>
+						<input type="text" name="thumbnail" value="asdfas" class="url"/>
+						<a class="preview" href="image" title="Preview this Image">
+							<span>Preview</span>
+						</a>
+					</label>
+				</fieldset>
+				<fieldset class="screenshots">
+					<legend>Screenshots</legend>
+					<fieldset class="screenshot">
+						<a class="delete" href="screenshot" title="Delete this Screenshot">
+							<span>Delete</span>
+						</a>
+						<label class="src img">
+							<span>Main</span>
+							<input type="text" name="src" value="http://3amproductions.net/images/3v2big01.gif" class="url"/>
+							<a class="preview" href="image" title="Preview this Image">
+								<span>Preview</span>
+							</a>
+						</label>
+						<label class="thumbnail img">
+							<span>Thumbnail</span>
+							<input type="text" name="thumbnail" value="http://3amproductions.net/images/3v2alt01.gif" class="url"/>
+							<a class="preview" href="image" title="Preview this Image">
+								<span>Preview</span>
+							</a>
+						</label>
+					</fieldset>
+					<fieldset class="screenshot">
+						<a class="delete" href="screenshot" title="Delete this Screenshot">
+							<span>Delete</span>
+						</a>
+						<label class="src img">
+							<span>Main</span>
+							<input type="text" name="src" value="http://3amproductions.net/images/3v2big02.gif" class="url"/>
+							<a class="preview" href="image" title="Preview this Image">
+								<span>Preview</span>
+							</a>
+						</label>
+						<label class="thumbnail img">
+							<span>Thumbnail</span>
+							<input type="text" name="thumbnail" value="http://3amproductions.net/images/3v2alt02.gif" class="url"/>
+							<a class="preview" href="image" title="Preview this Image">
+								<span>Preview</span>
+							</a>
+						</label>
+					</fieldset>
+					<fieldset class="screenshot">
+						<a class="delete" href="screenshot" title="Delete this Screenshot">
+							<span>Delete</span>
+						</a>
+						<label class="src img">
+							<span>Main</span>
+							<input type="text" name="src" value="http://3amproductions.net/images/3v2big03.gif" class="url"/>
+							<a class="preview" href="image" title="Preview this Image">
+								<span>Preview</span>
+							</a>
+						</label>
+						<label class="thumbnail img">
+							<span>Thumbnail</span>
+							<input type="text" name="thumbnail" value="http://3amproductions.net/images/3v2alt03.gif" class="url"/>
+							<a class="preview" href="image" title="Preview this Image">
+								<span>Preview</span>
+							</a>
+						</label>
+					</fieldset>
+					<a class="add" href="screenshot" title="Add Screenshot">
+						<span>Add</span>
+					</a>
+				</fieldset>
+			</fieldset>
+		</fieldset>
+	</form>
+</div>

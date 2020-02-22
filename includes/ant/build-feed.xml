@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." name="feed" default="main">
+	<target name="main" depends="twix2rss,twix2atom"/>
+	<target name="twix2rss">
+		<ant antfile="build-twix2rss.xml" inheritAll="false"/>
+	</target>
+	<target name="twix2atom">
+		<ant antfile="build-twix2atom.xml" inheritAll="false"/>
+	</target>
+</project>

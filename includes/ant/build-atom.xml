@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." name="atom" default="main">
+	<target name="main" depends="twix2atom,atom2html"/>
+	<target name="twix2atom">
+		<ant antfile="build-twix2atom.xml" inheritAll="false"/>
+	</target>
+	<target name="atom2html" depends="twix2atom">
+		<ant antfile="build-atom2html.xml" inheritAll="false"/>
+	</target>
+</project>

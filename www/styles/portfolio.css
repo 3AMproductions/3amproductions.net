@@ -1,0 +1,488 @@
+/*********************************** body ***************************************/
+
+body {
+	margin: 0;
+	padding: 0;
+	/*font-size: .9em; line-height: 1.8em;*/
+  font-size: 12px; line-height: 22px;
+}
+
+html {
+	/* http://www.splintered.co.uk/experiments/49/ */
+	min-height: 100%;
+	margin-bottom: 1px;
+	color: #7BB0C0;
+	background: #001321 url(/images/background.gif) top left repeat-x;
+	/* JASON */
+	/* font-size changed to 80%, font-size and line-height set to em's in body above */
+	/* font-size: 12px; line-height: 22px; */
+  /* GIL */
+  /* font-size changed to 85% */
+	/*font-size:85%;*/
+	font-family: "Trebuchet MS", "Verdana", "Lucida Sans Unicode", "Century Gothic", sans-serif;
+}
+
+
+/********************************* top elements *********************************/
+
+img { border:none; }
+
+#container {
+	padding: 0px;
+	margin: 0px auto;
+	width: 760px;
+}
+
+#header{
+	margin: 0px;
+	padding: 0px;
+	height: 178px;
+	width: 100%;
+	background: url(/images/headerAT.gif) top left no-repeat;
+}
+
+#nav {
+	position: relative;
+	margin: 20px 5px 0px 0px;
+	padding: 0px;
+	height: 50px; 
+	text-align: right;
+	color: white;
+	background: inherit;
+	display: block;
+	list-style-type: none;
+	text-transform: lowercase;
+	font-weight: bold;
+	/* JASON */
+	/* font-size:14px; letter-spacing:2px; */
+	font-size: 1.18em;
+	letter-spacing: .15em;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Verdana", "Century Gothic", sans-serif;
+}
+
+#nav li{
+	position: relative;
+	display: inline;
+	margin: 0px 10px 0px 10px;
+	padding: 0px;
+}
+
+.subnav {
+	position: relative;
+	margin: -20px 5px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	height: 50px; 
+	text-align: right;
+	color: white;
+	background: inherit;
+	display: block;
+	list-style-type: none;
+	text-transform: lowercase;
+	font-weight: bold;
+	/* JASON */
+	/* font-size:14px; letter-spacing:2px; */
+	font-size: 1.18em;
+	letter-spacing: .15em;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Verdana", "Century Gothic", sans-serif;
+}
+
+.subnav li{
+	position: relative;
+	display: inline;
+	margin: 0px 10px 0px 10px;
+	padding: 0px;
+}
+
+
+
+
+/******************************** content sections ****************************/
+
+#content {
+	margin-bottom: 40px;
+	/*color: inherit;
+	background: inherit;*/
+}
+
+.loading {
+  background: url(/images/loading3am.gif) 206px 160px no-repeat;
+}
+
+#leftcolumn {
+	position: relative;
+	padding: 10px 0px 0px 0px;
+	float: left;
+	width: 310px;
+	text-align: center;
+}
+
+#leftcolumn p, #portfolio p, #leftcolumn dl {
+	margin: 0px 20px 20px 16px;
+	clear: both;
+	text-align: justify;
+}
+
+#leftcolumn img {
+	margin: 15px 0px 0px 0px;
+}
+
+.them {
+	color: #AACEDA;
+	background: #001C29;
+	padding: 8px;
+	margin: 0px -2px;
+	border: 1px solid #FFFFFF;
+}
+
+#content em {
+	font-weight: bold;
+	color: #FFFFFF;
+	background: inherit;
+	font-size: 1.2em;
+	font-style: normal;
+}
+
+#content em.akey {
+	font-weight: normal;
+	color: #7BB0C0;
+	background: inherit;
+	font-size: 1.0em;
+	font-style: normal;
+}
+
+#rightcolumn {
+	position: relative;
+	padding: 10px 0px 0px 0px;
+	float: right;
+	/* The 428 width is so the trifecta has a straight line going down */
+	width: 428px;
+	text-align: center;
+}
+
+#rightcolumn p, #projects p {
+	margin: 0px 15px 20px 15px;
+	text-align: justify;
+	clear: both;
+		/* Alternate color for all text on page */
+		/*color: #92B3B8;*/
+}
+
+#portfolio {
+	position: relative;
+	padding: 10px 0px 0px 0px;
+	float: left;
+	width: 510px;
+	text-align: center;
+}
+
+#content #loading {
+  position: absolute;
+  top: 230px;
+  left: 260px;
+  z-index: 4;
+}
+
+#projects {
+	position: relative;
+	padding: 10px 0px 30px 0px;
+	float: right;
+	width: 240px;
+	text-align: center;
+  z-index: 5;
+}
+
+
+.link, li.link a {
+	float: right;
+	margin-right: 20px;
+	/* JASON */
+	/* font-size: 10px; */
+	font-size:.8em;
+	color: #9C9C9C;
+	background: inherit;
+}
+
+li.link a {
+	font-size:1em;
+}
+
+#portfolio a.link { margin: 4px 14px 0px 0px; }
+
+/*.link a {
+	font-size: 1em;
+}*/
+
+#footer{
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	clear: both;
+	width: 100%;
+	height: 20px;
+	color: #153244;
+	background: inherit;
+}
+
+
+form{
+	margin: 0px 15px 20px 15px;
+	padding: 0px;
+	text-align: left;
+}
+
+.row {
+	clear: both;
+	display: block;
+	margin: 5px 0px 5px 0px;
+	text-align: left;
+	height: 30px;
+}
+
+fieldset {
+	border: 0px;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	text-align: left;
+	clear: both;
+}
+
+fieldset label {
+	float: left;
+	width: 60px;
+	text-align: left;
+}
+
+fieldset input {
+	position: relative;
+	width: 200px;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+
+fieldset textarea {
+	position: relative;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+
+input#preview {
+	float: none;
+	clear: both;
+	margin: 20px 0px 0px 60px;
+	width: 120px;
+}
+
+input#edit, input#submit {
+	float: none;
+	clear: none;
+	margin: 20px 0px 0px 20px;
+	width: 120px;
+}
+
+em {
+	text-decoration: underline;
+}
+
+.contactbody {
+	margin: 0px 0px 0px 10px;
+}
+
+
+
+
+/********************************* links ********************************/
+
+#nav a, .subnav a{
+	text-decoration: none;
+}
+
+#nav a, .subnav a, #footer a{
+	color: #7BB0C0;
+	background: inherit;
+}
+
+#nav a:hover, .subnav a:hover, #footer a:hover, #nav a.location, .subnav a.location, 
+#nav a:focus, .subnav a:focus, #footer a:focus {
+	color: #FFFFFF;
+	background: inherit;
+}
+
+a{
+	text-decoration: none;
+	color: #FFFFFF;
+	background: inherit;
+	padding: 0px 2px 0px 2px;
+}
+
+#content a:hover, #content a:focus {
+	color: #001321;
+	background: #FFFFFF;
+}
+
+acronym, abbr {
+	border: inherit;
+}
+
+/********************************* lists ********************************/
+
+/*ul, dl, ol {*/
+ol, #rightcolumn ul {
+	text-align: justify;
+  margin-right: 15px;
+}
+
+#leftcolumn ul, #leftcolumn dl {
+	position: relative;
+	list-style-type: none;
+	text-align: justify;
+	margin: 0px 15px 0px 15px;
+	padding: 0px;
+}
+
+#leftcolumn li, #leftcolumn dt {
+	margin: 0px 5px 0px 0px;
+}
+
+#leftcolumn li.last { margin: 0px; }
+
+#leftcolumn ul.map li, #leftcolumn ul.map li ul li {
+  text-align: right;
+}
+
+#leftcolumn ul.map li ul, #leftcolumn ul.map li ul li {
+  margin-right: 0px;
+}
+
+#leftcolumn ul.map li a {
+  float: left;
+}
+
+ul#alternate { text-align: right; }
+
+#alternate img { white-space:nowrap; } 
+
+.bold, dd { color: #FFFFFF; background: inherit; }
+.boldbig, dt {
+ 	/* JASON */
+	/* font-size: 16px; */
+	font-size: 1.35em;
+	font-weight: bold;
+}
+
+#portfolio ul {
+	position: relative;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#portfolio li {
+	display: inline;
+	margin: 0px 12px 0px 0px;
+ }
+ 
+#portfolio li.last { margin: 0px; }
+
+#projects ul {
+	position: relative;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#projects li {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	display: block;
+	width: 100%;
+	clear: both;
+ }
+ 
+#projects li.link { padding-bottom: 10px; }
+
+#leftcolumn dl { margin-top: 15px; }
+
+dd {
+	padding: 0px;
+	margin: 0px 0px 10px 15px;
+}
+
+/************************** header typestyles ***************************/
+
+h1
+{
+	display: none;
+	
+	margin: 0px 0px 25px 0px;
+	padding: 0px 0px 30px 0px;
+	color: #FFFFFF;
+	background: inherit;
+	text-transform: uppercase;
+	text-align: left;
+	/* JASON */
+	/* font-size: 46px; */
+	font-size: 4em;
+	font-weight: normal;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Helvetica", "Century Gothic", sans-serif;
+}
+
+h2
+{
+	font-family: "Verdana", "Lucida Sans Unicode", "Century Gothic", sans-serif;
+	/* JASON */
+	/* font-size: 18px; */
+	font-size: 1.5em;
+	text-align: left;
+	margin: 15px 15px 10px 15px;
+	/*color: #00E2FF;*/
+	color: #FFFFFF;
+	background: inherit;
+}
+
+h3
+{
+	font-family: "Verdana", "Lucida Sans Unicode", "Century Gothic", sans-serif;
+	/* JASON */
+	/* font-size: 18px; */
+	font-size: 1.5em;
+	text-align: left;
+	margin: 15px 15px 10px 25px;
+  padding-left: 8px;
+  border-left: 4px solid #7BB0C0;
+	/*color: #00E2FF;*/
+}
+
+h5
+{
+	margin: 1px 15px 9px 3px;
+	color: #AEC8CF;
+	background: inherit;
+	text-align: left;
+	/* JASON */
+	/* font-size: 10px; */
+	font-size: .9em;
+	font-weight: bold;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Helvetica", "Century Gothic", sans-serif;
+}
+
+h6
+{
+	margin: 0px 15px 0px 15px;
+	padding: 0px 0px 0px 0px;
+	color: #AEC8CF;
+	background: inherit;
+	text-align: right;
+	/* JASON */
+	/* font-size: 10px; */
+	font-size: .9em;
+	font-weight: bold;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Helvetica", "Century Gothic", sans-serif;
+}
+
+/************************** miscellaneous elements ***************************/
+
+kbd, code {
+	font-family: "Courier New","Courier",monospace;
+}

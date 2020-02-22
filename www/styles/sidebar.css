@@ -1,0 +1,19 @@
+/*********************************** body ***************************************/
+
+html { color: #9C9C9C; background: #001321 url(/images/sidebar-background.gif) top left repeat-x;
+	font-family: "Trebuchet MS", "Verdana", "Lucida Sans Unicode", "Century Gothic", sans-serif; }
+body { margin: 2em; padding: 0; font-size: 12px; line-height: 22px; }
+
+/********************************* links ********************************/
+
+a { text-decoration: none; color: #FFFFFF; background: inherit; padding: 0px 2px 0px 2px; }
+a:hover, a:focus { color: #001321; background: #FFFFFF;}
+
+h1 { font-size: 1.5em; font-family: "Verdana", "Lucida Sans Unicode", "Century Gothic", sans-serif;
+	text-align: left; color: #FFFFFF; background: inherit; text-transform:lowercase; padding-left:.5em; }
+
+/********************************* lists ********************************/
+
+img { border:0; }
+ul { margin:2em 0 0; padding:0; list-style-type:none; }
+li.link { margin-bottom:1em; }

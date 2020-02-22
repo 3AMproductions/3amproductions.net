@@ -1,41 +1,24 @@
 /* Following lines used to dynamically include dependent javascript files. Do not alter
-php-include lib.prototype.js.php
-
-// yahoo_event needed if using YAHOO Event lib, not if using Prototype's
-//hp-include lib.yahoo_event.js.php
+php-include http://cachefile.net/scripts/jquery/1.2.1/jquery-1.2.1.pack.js
 */
 
-var hidemail = {
-  node : 'address',
-  at : '[at]',
-	dot : '[dot]',
-	classname : 'email',
-	activate : function(){
-    if(!document.createElement) return;
-    var emails = document.getElementsByClassName(hidemail.classname,hidemail.node);
-		emails.each(function(email){
-      if (email.firstChild.nodeValue)
-      {
-       	var adr = email.firstChild.nodeValue;
-      	var title = email.getAttribute('title');
-      	var clas = email.className;
-      	adr = adr.replace(hidemail.at,"@").replace(hidemail.dot,".");
-      	var text = document.createTextNode(adr);
-      	var a = document.createElement('a');
-      	a.appendChild(text);
-      	a.setAttribute('rel', 'contact');
-      	a.setAttribute('title', title);
-      	a.setAttribute('href', "mailto:" + adr);
-      	var parent = email.parentNode;
-      	var address = document.createElement('address');
-      	address.appendChild(a);
-      	address.className = clas;
-      	parent.replaceChild(address,email);
-			}
-		});
-    return;
-	}
+jQuery(function($){
+hidemail = {
+    node : 'address',
+    at : '[at]',
+    dot : '[dot]',
+    classname : 'email',
+    activate : function(){
+        $(hidemail.node + "." + hidemail.classname).each(function(i){
+            if ($(this).text()){
+                var adr = $(this).text().replace(hidemail.at,"@").replace(hidemail.dot,".");
+                $(this).empty()
+                    .removeClass('email')
+                    .append('<a class="email" href="mailto:' + adr + '" rel="contact">' + adr + '</a>');
+            }
+        });
+        return;
+    }
 };
-
-//YAHOO.util.Event.addListener(window,'load',hidemail.activate);
-Event.observe(window,'load',hidemail.activate);
+hidemail.activate();
+});

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glossary>
+	<tags>
+		<tag id="3am">
+			<description>For us.</description>
+		</tag>
+		<tag id="business">
+			<description>For a business</description>
+		</tag>
+		<tag id="completed">
+			<description>The project has gone live.</description>
+		</tag>
+		<tag id="draft">
+			<description>The project is currently being drafted.</description>
+		</tag>
+		<tag id="hold">
+			<description>The project is on hold.</description>
+		</tag>
+		<tag id="managed">
+			<description>The project is hosted and managed by us.</description>
+		</tag>
+		<tag id="personal">
+			<description>It is a personal project.</description>
+		</tag>
+		<tag id="private">
+			<description>It is a personal project that is deemed private and/or confidential.</description>
+		</tag>
+		<tag id="probono">
+			<description>The project was done for free as volunteer work.</description>
+		</tag>
+		<tag id="progress">
+			<description>The project is in progress.</description>
+		</tag>
+		<tag id="terminated">
+			<description>The project has been terminated.</description>
+		</tag>
+		<tag id="jason">
+			<description>The project is managed by Jason.</description>
+		</tag>
+		<tag id="gil">
+			<description>The project is managed by Gilbert.</description>
+		</tag>
+	</tags>
+</glossary>

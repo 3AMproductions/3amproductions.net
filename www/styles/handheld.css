@@ -1,0 +1,28 @@
+/************************* Site-wide ******************************/
+html { color: #7BB0C0; background: #001321; }
+a { color:#FFFFFF; background:inherit; }
+a:hover, a:focus { color: #001321; background: #FFFFFF; }
+#footer li, .footnote-flag { display:none; }
+#footer #jumptop { display:block; }
+h1, h2, h3, h4, h5 { margin:1em auto; text-transform:lowercase; color:#FFFFFF; background:inherit; }
+p { margin:1em auto; }
+p, li { text-align: justify; }
+kbd, code { font-size:.75em; font-family:"Courier New", monospace; }
+#nav { list-style-type:none; text-transform:lowercase; }
+a.include, object.include { display:none; }
+
+/*********************** Page Specific ****************************/
+/* Portfolio */
+ul#alternate, #projects ul { list-style-type:none; }
+/* Jason */
+#jason #leftcolumn ul { list-style-type:none; }
+/* Gilbert */
+#gilbert #leftcolumn ul { list-style-type:none; }
+/* Help */
+#help ul.map { list-style-type:none; }
+/* Procedure */
+#procedure .them { color: #AACEDA; background: #001C29; border: 1px solid #FFFFFF; }
+/* Twilight */
+#management, #feeds, #schema { list-style-type:none; }
+/* Tags */
+#all_tags { list-style-type:none; }

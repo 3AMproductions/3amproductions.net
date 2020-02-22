@@ -1,0 +1,331 @@
+/****************************** HTML, Body, Container **********************/
+html {
+	font-family: "Trebuchet MS", "Verdana", "Lucida Sans Unicode", "Century Gothic", sans-serif;
+	margin-bottom: 1px;
+	min-height: 100%;
+	color: #7BB0C0;
+	background: #001321 url(/images/background.gif) top left repeat-x;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	line-height: 22px;
+}
+
+#container {
+	padding: 0;
+	margin: 0 auto;
+	width: 760px;
+}
+
+#content {
+	margin-bottom: 40px;
+	height: 500px;
+	text-transform:lowercase;
+}
+
+#templates {
+	display:none;
+}
+
+#controls a {
+	margin-right:25px;
+}
+
+#errors {
+	display:none;
+}
+/**************************** Header, Footer, Navigation *******************/
+#header {
+	margin: 0;
+	padding: 0;
+	height: 178px;
+	width: 100%;
+	background: url(/images/headerAT.gif) top left no-repeat;
+}
+
+#nav {
+	position: relative;
+	margin: 20px 5px 0 0;
+	padding: 0;
+	height: 50px;
+	text-align: right;
+	color: white;
+	background: inherit;
+	display: block;
+	list-style-type: none;
+	text-transform: lowercase;
+	font-weight: bold;
+	font-size: 1.18em;
+	letter-spacing: .15em;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Verdana", "Century Gothic", sans-serif;
+}
+
+#nav #skipnav {
+	display:none;
+}
+
+#nav li{
+	position: relative;
+	display: inline;
+	margin: 0 10px;
+	padding: 0;
+}
+
+#footer {
+	margin: 0;
+	padding: 0;
+	clear: both;
+	width: 100%;
+	height: 20px;
+	color: #153244;
+	background: inherit;
+	text-transform: none;
+}
+
+#footer ul {
+	margin: 0 15px;
+	padding: 0;
+	color: #AEC8CF;
+	background: inherit;
+	text-align: right;
+	font-size: .9em;
+	font-weight: bold;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Helvetica", "Century Gothic", sans-serif;
+}
+
+#footer li {
+	display:inline;
+	border-left:1px solid;
+	padding:0 5px;
+}
+
+#footer li:first-child {
+	border:0;
+}
+
+#footer li:last-child {
+	padding-right:0;
+}
+
+#nav a, #footer a {
+	text-decoration: none;
+	color: #7BB0C0;
+	background: inherit;
+}
+
+#nav a:hover, #footer a:hover, #nav a.active, #nav a:focus, #footer a:focus  {
+	color: #FFFFFF;
+	background: inherit;
+}
+
+/*************************** Links and the Like *******************************/
+a, a.enabled {
+	text-decoration: none;
+	color: #FFFFFF;
+	background: inherit;
+	padding: 0 2px;
+	cursor: pointer;
+	filter:alpha(opacity=100);
+	-moz-opacity:1.0;
+	opacity:1.0;
+}
+
+a.disabled {
+	cursor: default;
+	filter:alpha(opacity=50);
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+}
+
+a:hover, a:focus {
+	color: #001321;
+	background: #FFFFFF;
+}
+
+a.disabled:hover, a.disabled:focus {
+	background-color: inherit;
+	color: #001321;
+}
+
+acronym, abbr {
+	text-decoration:none;
+	border:0;
+}
+
+/************************** Headers ******************************************/
+h1 {
+	display: none;
+	margin: 0 0 25px;
+	padding: 0 0 30px;
+	color: #FFFFFF;
+	background: inherit;
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 4em;
+	font-weight: normal;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Helvetica", "Century Gothic", sans-serif;
+}
+
+h2 {
+	font-family: "Verdana", "Lucida Sans Unicode", "Century Gothic", sans-serif;
+	font-size: 1.5em;
+	text-align: left;
+	margin: 15px 15px 10px 0;
+	color: #FFFFFF;
+	background: inherit;
+}
+
+div.projects h2 {
+	cursor:pointer;
+}
+
+/************************** Microformats **************************************/
+a.include, object.include {
+	display:none;
+}
+
+/******************************************************************************/
+.project {
+	position:relative;
+}
+
+fieldset {
+	margin:10px 0 0;
+	padding: 5px 10px;
+	border: 2px solid #00303C;
+	background: url(/images/background.gif ) 10px -190px repeat-x;
+}
+
+legend {
+	font-weight:bold;
+	color:white;
+	font-size: 1.6em;
+	margin-bottom: 4px;
+}
+
+label {
+	white-space:nowrap;
+	margin-right:15px;
+}
+
+input, select {
+	color:white;
+	background-color:transparent;
+	border:0;
+	border-bottom:1px dashed #7BB0C0;
+}
+
+input {
+	width:150px;
+	padding-left:5px;
+}
+
+select {
+	padding:2px;
+	border:0;
+}
+
+textarea {
+	background:transparent;
+	color:white;
+	vertical-align:top;
+	border:1px solid #7BB0C0;
+	padding:5px 10px;
+	margin-left:15px;
+}
+
+input.date, .subdomain input, .directory input, .abbr input {
+	width:80px;
+}
+
+input.date {
+	text-align:center;
+}
+
+.email input {
+	width:300px;
+}
+
+input.url {
+	width:200px;
+}
+
+.showcase input {
+  width: 550px;
+}
+
+input:focus, select:focus, textarea:focus {
+	border:2px inset;
+	background-color:#001C29;
+}
+
+input:focus {
+	padding-left:1px;
+}
+
+select:focus {
+	padding:0;
+}
+
+textarea:focus {
+	padding:4px 9px;
+}
+
+.contact-info > legend, .management > legend, .showcase > legend {
+	font-size:1.5em;
+}
+
+a.preview, a.delete, a.add, a.undo, a.save, a.commit {
+	background-color: transparent;
+	background-position: left center;
+	background-repeat: no-repeat;
+	font-size:.75em;
+	padding-left:16px;
+}
+
+a.preview span, a.delete span, a.add span, a.undo span, a.save span, a.commit span { display:none; }
+a.add {background-image:url(/images/add.png)}
+a.undo.enabled {background-image:url(/images/undo-enabled.png)}
+a.undo.disabled {background-image:url(/images/undo-disabled.png)}
+a.save.enabled {background-image:url(/images/save-enabled.png)}
+a.save.disabled {background-image:url(/images/save-disabled.png)}
+a.commit {background-image:url(/images/commit.png)}
+a.delete {background-image:url(/images/delete.png)}
+a.preview {background-image:url(/images/preview.png)}
+
+
+label.started, label.launched, label.modified {
+	display:-moz-inline-block;
+	width:16em;
+	float:left;
+}
+
+.notes label.modified {
+	float:none;
+}
+
+.feature, .screenshots {
+	width:100px;
+}
+
+.feature label > span, .screenshots label > span {
+	display:-moz-inline-block;
+}
+
+.project > a.delete {
+	display:inline!important;
+	position:absolute;
+	top:0;
+	left:400px;
+	overflow:hidden;
+	width:0; 
+}
+
+.project > a.delete span {
+	display:inline;
+	margin-left:20px;
+}
+

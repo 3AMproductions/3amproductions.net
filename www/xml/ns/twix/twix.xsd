@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- edited with XMLSpy v2006 U (http://www.altova.com) by Jason Karns (EMBRACE) -->
+<xs:schema xmlns="http://3amproductions.net/xml/ns/twix/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xhtml="http://www.w3.org/1999/xhtml" targetNamespace="http://3amproductions.net/xml/ns/twix/" elementFormDefault="qualified">
+	<xs:element name="portfolio">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="project" type="projectType" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="modified" type="xs:date" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="projectType">
+		<xs:sequence>
+			<xs:element name="started" type="xs:date"/>
+			<xs:element name="modified" type="xs:date"/>
+			<xs:element name="launched" type="xs:date" minOccurs="0"/>
+			<xs:element name="organization" type="organizationType"/>
+			<xs:element name="contacts" minOccurs="0">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="contactsType">
+							<xs:sequence>
+								<xs:element name="contact" type="contactType" minOccurs="0" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element ref="directory" minOccurs="0"/>
+			<xs:element ref="subdomain" minOccurs="0"/>
+			<xs:element ref="livesite" minOccurs="0"/>
+			<xs:element name="notes" minOccurs="0">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="notesType">
+							<xs:sequence>
+								<xs:element ref="note" minOccurs="0" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="showcase" type="showcaseType" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="id" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string"/>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="class" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="3am"/>
+					<xs:enumeration value="business"/>
+					<xs:enumeration value="personal"/>
+					<xs:enumeration value="probono"/>
+					<xs:enumeration value="private"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="status" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="completed"/>
+					<xs:enumeration value="draft"/>
+					<xs:enumeration value="hold"/>
+					<xs:enumeration value="managed"/>
+					<xs:enumeration value="progress"/>
+					<xs:enumeration value="terminated"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="manager" use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="gil"/>
+					<xs:enumeration value="jason"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="organizationType" mixed="true">
+		<xs:attribute name="abbr" use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:string"/>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="contactsType"/>
+	<xs:complexType name="contactType">
+		<xs:sequence>
+			<xs:element ref="name"/>
+			<xs:element ref="jobtitle" minOccurs="0"/>
+			<xs:element ref="role" minOccurs="0"/>
+			<xs:element ref="email" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="phone" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="address" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="addressType">
+							<xs:attribute name="type" use="required">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="home"/>
+										<xs:enumeration value="work"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:attribute>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="addressType">
+		<xs:sequence>
+			<xs:element name="street1" type="street" minOccurs="0"/>
+			<xs:element name="street2" type="street" minOccurs="0"/>
+			<xs:element ref="city" minOccurs="0"/>
+			<xs:element ref="state" minOccurs="0"/>
+			<xs:element ref="zip" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="name" type="xs:string"/>
+	<xs:element name="jobtitle" type="xs:string"/>
+	<xs:element name="role" type="xs:string"/>
+	<xs:element name="email">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="type" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="personal"/>
+								<xs:enumeration value="business"/>
+								<xs:enumeration value=""/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="phone">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="type" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="home"/>
+								<xs:enumeration value="work"/>
+								<xs:enumeration value="mobile"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="street">
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:element name="city" type="xs:string"/>
+	<xs:element name="state">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="abbr" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="OH"/>
+								<xs:enumeration value="AL"/>
+								<xs:enumeration value="AK"/>
+								<xs:enumeration value="AS"/>
+								<xs:enumeration value="AZ"/>
+								<xs:enumeration value="AR"/>
+								<xs:enumeration value="CA"/>
+								<xs:enumeration value="CO"/>
+								<xs:enumeration value="CT"/>
+								<xs:enumeration value="DE"/>
+								<xs:enumeration value="DC"/>
+								<xs:enumeration value="FM"/>
+								<xs:enumeration value="FL"/>
+								<xs:enumeration value="GA"/>
+								<xs:enumeration value="GU"/>
+								<xs:enumeration value="HI"/>
+								<xs:enumeration value="ID"/>
+								<xs:enumeration value="IL"/>
+								<xs:enumeration value="IN"/>
+								<xs:enumeration value="IA"/>
+								<xs:enumeration value="KS"/>
+								<xs:enumeration value="KY"/>
+								<xs:enumeration value="LA"/>
+								<xs:enumeration value="ME"/>
+								<xs:enumeration value="MH"/>
+								<xs:enumeration value="MD"/>
+								<xs:enumeration value="MA"/>
+								<xs:enumeration value="MI"/>
+								<xs:enumeration value="MN"/>
+								<xs:enumeration value="MS"/>
+								<xs:enumeration value="MO"/>
+								<xs:enumeration value="MT"/>
+								<xs:enumeration value="NE"/>
+								<xs:enumeration value="NV"/>
+								<xs:enumeration value="NH"/>
+								<xs:enumeration value="NJ"/>
+								<xs:enumeration value="NM"/>
+								<xs:enumeration value="NY"/>
+								<xs:enumeration value="NC"/>
+								<xs:enumeration value="ND"/>
+								<xs:enumeration value="MP"/>
+								<xs:enumeration value="OH"/>
+								<xs:enumeration value="OK"/>
+								<xs:enumeration value="OR"/>
+								<xs:enumeration value="PW"/>
+								<xs:enumeration value="PA"/>
+								<xs:enumeration value="PR"/>
+								<xs:enumeration value="RI"/>
+								<xs:enumeration value="SC"/>
+								<xs:enumeration value="SD"/>
+								<xs:enumeration value="TN"/>
+								<xs:enumeration value="TX"/>
+								<xs:enumeration value="UT"/>
+								<xs:enumeration value="VT"/>
+								<xs:enumeration value="VI"/>
+								<xs:enumeration value="VA"/>
+								<xs:enumeration value="WA"/>
+								<xs:enumeration value="WV"/>
+								<xs:enumeration value="WI"/>
+								<xs:enumeration value="WY"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="zip">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="\d\d\d\d\d?(\-\d\d\d\d)"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="directory" type="xs:string"/>
+	<xs:element name="subdomain" type="xs:string"/>
+	<xs:element name="livesite" type="xs:anyURI"/>
+	<xs:complexType name="notesType"/>
+	<xs:element name="note">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="modified" type="xs:date" use="required"/>
+					<xs:attribute name="by" type="xs:string" use="required"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="title" type="xs:string"/>
+	<xs:complexType name="showcaseType">
+		<xs:sequence>
+			<xs:element ref="title"/>
+			<xs:element name="description" type="descriptionType"/>
+			<xs:element name="images" type="imagesType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="descriptionType" mixed="true">
+		<xs:choice>
+			<xs:any namespace="http://www.w3.org/1999/xhtml" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:element name="description" type="descriptionType"/>
+	<xs:complexType name="imagesType">
+		<xs:sequence>
+			<xs:element name="feature" type="featureType"/>
+			<xs:element name="screenshot" type="screenshotType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="featureType">
+		<xs:sequence>
+			<xs:element ref="src" minOccurs="0"/>
+			<xs:element ref="thumbnail" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="screenshotType">
+		<xs:sequence>
+			<xs:element ref="src" minOccurs="0"/>
+			<xs:element ref="thumbnail" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="src" type="xs:string"/>
+	<xs:element name="thumbnail" type="xs:string"/>
+</xs:schema>

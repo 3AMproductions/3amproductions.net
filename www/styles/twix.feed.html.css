@@ -1,0 +1,225 @@
+/*********************************** body ***************************************/
+
+body {
+	font-size: 12px; line-height: 20px;
+	margin: 0px auto;
+	padding: 0;
+	width: 760px;
+}
+
+html {
+	min-height: 100%;
+	margin-bottom: 1px;
+	color: #7BB0C0;
+	background: #001321 url(/images/background.gif) top left repeat-x;
+	font-family: "Trebuchet MS", "Verdana", "Lucida Sans Unicode", "Century Gothic", sans-serif;
+}
+
+
+/********************************* top elements *********************************/
+
+img { border:none; }
+
+#header{
+	margin: 0px;
+	padding: 0px;
+	height: 178px;
+	width: 100%;
+	background: url(/images/headerAT.gif) top left no-repeat;
+}
+
+#nav {
+	position: relative;
+	margin: 20px 5px 0px 0px;
+	padding: 0px;
+	height: 50px; 
+	text-align: right;
+	color: white;
+	background: inherit;
+	display: block;
+	list-style-type: none;
+	text-transform: lowercase;
+	font-weight: bold;
+	font-size: 1.18em;
+	letter-spacing: .15em;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Verdana", "Century Gothic", sans-serif;
+}
+
+#nav li{
+	position: relative;
+	display: inline;
+	margin: 0px 10px 0px 10px;
+	padding: 0px;
+}
+
+.subnav {
+	position: relative;
+	margin: -20px 5px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	height: 50px; 
+	text-align: right;
+	color: white;
+	background: inherit;
+	display: block;
+	list-style-type: none;
+	text-transform: lowercase;
+	font-weight: bold;
+	font-size: 1.18em;
+	letter-spacing: .15em;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Verdana", "Century Gothic", sans-serif;
+}
+
+.subnav li{
+	position: relative;
+	display: inline;
+	margin: 0px 10px 0px 10px;
+	padding: 0px;
+}
+
+#content {
+	margin: 0px auto;
+	width: 500px;
+}
+
+/******************************** content sections ****************************/
+
+div.project { margin:75px auto; }
+
+p { text-align:justify; }
+
+a.addthis { float:right; margin:5px 15px; }
+
+div.entry-content ul { margin-top: 50px; }
+div.entry-content li { text-align:center; margin:20px auto; }
+
+.livesite { float:right; margin-right:20px; }
+
+ul,li { margin:0; padding:0; list-style-type:none; }
+address, ul.tags li, ul.authors li { display:inline; }
+ul.tags li:after, ul.authors li:after { content:", "; }
+ul.tags li:last-child:after, ul.authors li:last-child:after { content:""; }
+
+dt:after { content:":"; }
+dd { margin-left:75px; margin-top:-20px; margin-bottom:10px; }
+
+#footer{
+	margin: 0px auto;
+	width: 500px;
+	padding: 0px;
+	clear: both;
+	height: 20px;
+	color: #153244;
+	background: inherit;
+}
+
+#footer span { display:block; }
+.copyright { white-space:pre-line; }
+
+
+
+/********************************* links ********************************/
+
+#nav a, .subnav a{
+	text-decoration: none;
+}
+
+#nav a, .subnav a, #footer a{
+	color: #7BB0C0;
+	background: inherit;
+}
+
+#nav a:hover, .subnav a:hover, #footer a:hover, #nav a.active, .subnav a.active, 
+#nav a:focus, .subnav a:focus, #footer a:focus {
+	color: #FFFFFF;
+	background: inherit;
+}
+
+a{
+	text-decoration: none;
+	color: #FFFFFF;
+	background: inherit;
+	padding: 0px 2px 0px 2px;
+}
+
+a:hover, a:focus {
+	color: #001321;
+	background: #FFFFFF;
+}
+
+acronym, abbr {
+	border: inherit;
+}
+
+/************************** header typestyles ***************************/
+
+#header h1
+{
+	display: none;
+	margin: 0px 0px 25px 0px;
+	padding: 0px 0px 30px 0px;
+	color: #FFFFFF;
+	background: inherit;
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 4em;
+	font-weight: normal;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Helvetica", "Century Gothic", sans-serif;
+}
+
+h1 { color:#FFFFFF; text-transform:lowercase; }
+
+h2
+{
+	font-family: "Verdana", "Lucida Sans Unicode", "Century Gothic", sans-serif;
+	font-size: 1.5em;
+	text-align: right;
+	margin: 45px 15px 10px 0;
+	background: inherit;
+	text-transform: lowercase;
+}
+
+h3
+{
+	font-family: "Verdana", "Lucida Sans Unicode", "Century Gothic", sans-serif;
+	font-size: 1.5em;
+	color: #FFFFFF;
+	text-align: left;
+	margin: 15px 15px 10px 0;
+	text-transform: lowercase;
+}
+
+
+/************************** miscellaneous elements ***************************/
+
+kbd, code {
+	font-family: "Courier New","Courier",monospace;
+}
+
+/************************** fixes ********************************************/
+
+/*********** footer converted from h6 to ul,li ************************/
+#footer ul {
+	margin: 0px 15px 0px 15px;
+	padding: 0px 0px 0px 0px;
+	color: #AEC8CF;
+	background: inherit;
+	text-align: right;
+	font-size: .9em;
+	font-weight: bold;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Helvetica", "Century Gothic", sans-serif;
+}
+#footer li {display:inline; border-left:1px solid; padding:0 5px;}
+#footer li:first-child {border:0;}
+#footer li:last-child {padding-right:0;}
+
+/*********** microformats ***********************************************/
+a.include, object.include { display:none; }
+
+/*********** footnotes **************************************************/
+#footnotes, sup.footnote-flag { display:none; }
+
+/*********** skip navigation ********************************************/
+#nav #skipnav { display:none; }
+
+/*********** jump to top ********************************************/
+#footer #jumptop { display:none; }

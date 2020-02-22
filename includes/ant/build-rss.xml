@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." name="rss" default="main">
+	<target name="main" depends="twix2rss,rss2html"/>
+	<target name="twix2rss">
+		<ant antfile="build-twix2rss.xml" inheritAll="false"/>
+	</target>
+	<target name="rss2html" depends="twix2rss">
+		<ant antfile="build-rss2html.xml" inheritAll="false"/>
+	</target>
+</project>

@@ -1,0 +1,20 @@
+RewriteEngine On
+
+# Rewrite Rules for Portfolio Files
+#RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^portfolio\.(.*)$ guard.php/portfolio.$1
+RewriteRule ^Twilight\.spp$ guard.php/Twilight.spp
+
+#AuthUserFile /home/pimp3am/.htpasswd
+#AuthName ""
+#AuthType Basic
+#Allow from all
+#<FilesMatch portfolio.*>
+#	Require user pimp3am
+#</FilesMatch>
+#<Files Twilight.spp>
+#	Require user pimp3am
+#</Files>
+
+DirectoryIndex index.php index.html index.htm feed.php
+

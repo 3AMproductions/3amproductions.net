@@ -1,0 +1,62 @@
+/* xmdp.css */
+
+html, body {
+  font-family: 'Gill Sans MT', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  background: #ccc url(/img/diag.gif);
+}
+
+body {
+  margin: 20px;
+  padding: 0 20px 20px 20px;
+  border: 1px solid #887;
+  background: #f7f7ee;
+}
+
+h1#xmdp {
+  font-family: 'Trebuchet MS', sans-serif;
+  margin: 10px 0 0 0;
+  font-size: 180%;
+  color: #339;
+}
+
+abbr, acronym, .help{
+	cursor: help;
+}
+
+a abbr, a acronym{
+	cursor: pointer;
+	cursor: hand; /* hand must follow pointer so IE will over-ride properly */
+}
+
+
+h2#domain, h2 {
+  padding-left: 0.5em;
+  height: 1.8em;
+  line-height: 1.8em;
+  margin-top: 0;
+  font-size: 140%;
+  background: #887;
+  color: #fff;
+}
+
+dl#profile dd { font-size: 100%; }
+dl#profile dt {
+  font-weight: bold;
+  color: #332;
+}
+
+strong {
+  font-size: 110%;
+  font-weight: bold;
+  color: #332;
+}
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+a:link,
+a:visited,
+a:hover,
+a:active { color: #339; }
+
+/* xmdp.css */

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+	<Folder FolderName="XML Files" ExtStr="xml;cml;math;mtx;rdf;smil;svg;wml">
+		<File FilePath="portfolio.xml" HomeFolder="Yes"/>
+		<File FilePath="portfolio.rss.xml" HomeFolder="Yes"/>
+		<File FilePath="portfolio.atom.xml" HomeFolder="Yes"/>
+		<File FilePath="C:\Inetpub\wwwroot\3AM\xml\tags\glossary.xml" HomeFolder="Yes"/>
+		<File FilePath="twilight-html-temp.xml" HomeFolder="Yes"/>
+		<File FilePath="portfolio-dev.xml" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="XSL Files" ExtStr="xsl;xslt">
+		<File FilePath="C:\Inetpub\wwwroot\3AM\xml\ns\twix\twix2rss.xsl" HomeFolder="Yes"/>
+		<File FilePath="C:\Inetpub\wwwroot\3AM\xml\ns\twix\twix2atom.xsl" HomeFolder="Yes"/>
+		<File FilePath="C:\Inetpub\wwwroot\3AM\xml\ns\twix\twix2ajax-json.xsl" HomeFolder="Yes"/>
+		<File FilePath="C:\Inetpub\wwwroot\3AM\xml\ns\twix\twix2ajax-xml.xsl" HomeFolder="Yes"/>
+		<File FilePath="C:\Inetpub\wwwroot\3AM\xml\ns\twix\twix2html-3am.xsl" HomeFolder="Yes"/>
+		<File FilePath="C:\Inetpub\wwwroot\3AM\xml\ns\twix\twix2html-twilight.xsl" HomeFolder="Yes"/>
+		<File FilePath="C:\Inetpub\wwwroot\3AM\xml\chicklets.xsl" HomeFolder="Yes"/>
+		<File FilePath="C:\Inetpub\wwwroot\3AM\xml\parse-rfc2822.xsl" HomeFolder="Yes"/>
+		<File FilePath="C:\Inetpub\wwwroot\3AM\xml\ns\twix\twixrss2html.xsl" HomeFolder="Yes"/>
+		<File FilePath="C:\Inetpub\wwwroot\3AM\xml\ns\twix\twixatom2html.xsl" HomeFolder="Yes"/>
+		<File FilePath="C:\Inetpub\wwwroot\3AM\xml\ns\twix\twix2html-tag.xsl" HomeFolder="Yes"/>
+		<File FilePath="C:\Inetpub\wwwroot\3AM\xml\xs3p.xsl" HomeFolder="Yes"/>
+		<File FilePath="C:\Inetpub\wwwroot\3AM\xml\atom2rss.xsl" HomeFolder="Yes"/>
+		<File FilePath="C:\Inetpub\wwwroot\3AM\xml\hatom2atom.xsl" HomeFolder="Yes"/>
+		<File FilePath="C:\Inetpub\wwwroot\3AM\xml\ns\twix\html-twilight2twix.xsl" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="HTML Files" ExtStr="html;htm;xhtml;asp">
+		<File FilePath="portfolio.xhtml" HomeFolder="Yes"/>
+		<File FilePath="twilight.xhtml" HomeFolder="Yes"/>
+		<File FilePath="portfolio.atom.xhtml" HomeFolder="Yes"/>
+		<File FilePath="portfolio.rss.xhtml" HomeFolder="Yes"/>
+		<File FilePath="twilight.xforms.xhtml" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="DTD/Schemas" ExtStr="dtd;dcd;xdr;biz;xsd">
+		<File FilePath="C:\Inetpub\wwwroot\3AM\xml\ns\twix\twix.xsd" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="JavaScript Files" ExtStr=".js"/>
+	<Folder FolderName="PHP Class Files" ExtStr=".php"/>
+</Project>

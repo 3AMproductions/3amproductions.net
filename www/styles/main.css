@@ -1,0 +1,554 @@
+/*********************************** body ***************************************/
+
+body {
+	margin: 0;
+	padding: 0;
+	/*font-size: .9em; line-height: 1.8em;*/
+	font-size: 12px; line-height: 22px;
+}
+
+html {
+	/* http://www.splintered.co.uk/experiments/49/ */
+	min-height: 100%;
+	margin-bottom: 1px;
+	color: #7BB0C0;
+	background: #001321 url(/images/background.gif) top left repeat-x;
+  /*background: #D2D2D2 url(/images/background.gif) top left repeat-x;*/
+	/* JASON */
+	/* font-size changed to 80%, font-size and line-height set to em's in body above */
+	/* font-size: 12px; line-height: 22px; */
+  /* GIL */
+  /* font-size changed to 85% */
+	/*font-size:85%;*/
+	font-family: "Trebuchet MS", "Verdana", "Lucida Sans Unicode", "Century Gothic", sans-serif;
+}
+
+
+/********************************* top elements *********************************/
+
+img { border:none; }
+
+#container {
+	padding: 0px;
+	margin: 0px auto;
+	width: 760px;
+}
+
+#header{
+	margin: 0px;
+	padding: 0px;
+	height: 178px;
+	width: 100%;
+	background: url(/images/headerAT.gif) top left no-repeat;
+}
+
+#nav {
+	position: relative;
+	margin: 20px 5px 0px 0px;
+	padding: 0px;
+	height: 50px; 
+	text-align: right;
+	color: white;
+	background: inherit;
+	display: block;
+	list-style-type: none;
+	text-transform: lowercase;
+	font-weight: bold;
+	/* JASON */
+	/* font-size:14px; letter-spacing:2px; */
+	font-size: 1.18em;
+	letter-spacing: .15em;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Verdana", "Century Gothic", sans-serif;
+}
+
+#nav li{
+	position: relative;
+    display: inline;
+    margin: 0px 10px 0px 10px;
+	padding: 0px;
+}
+
+.subnav {
+	position: relative;
+	margin: -20px 5px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	height: 50px; 
+	text-align: right;
+	color: white;
+	background: inherit;
+	display: block;
+	list-style-type: none;
+	text-transform: lowercase;
+	font-weight: bold;
+	/* JASON */
+	/* font-size:14px; letter-spacing:2px; */
+	font-size: 1.18em;
+	letter-spacing: .15em;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Verdana", "Century Gothic", sans-serif;
+}
+
+.subnav li{
+	position: relative;
+	display: inline;
+	margin: 0px 10px 0px 10px;
+	padding: 0px;
+}
+
+
+
+
+/******************************** content sections ****************************/
+
+#content {
+	margin-bottom: 40px;
+  height: 500px;
+}
+
+.loading {
+  background: url(/images/loading3am.gif) 203px 180px no-repeat;
+}
+
+#leftcolumn {
+	position: relative;
+	padding: 10px 0px 0px 0px;
+	float: left;
+	width: 310px;
+	text-align: center;
+}
+
+#leftcolumn p, #portfolio p, #leftcolumn dl {
+	margin: 0px 20px 20px 16px;
+	clear: both;
+	text-align: justify;
+}
+
+#leftcolumn img {
+	margin: 15px 0px 0px 0px;
+}
+
+.them {
+	color: #AACEDA;
+	background: #001C29;
+	padding: 8px;
+	margin: 0px -2px;
+	border: 1px solid #FFFFFF;
+}
+
+#content em {
+	font-weight: bold;
+	color: #FFFFFF;
+	background: inherit;
+	font-size: 1.2em;
+	font-style: normal;
+}
+
+#content em.akey {
+	font-weight: normal;
+	color: #7BB0C0;
+	background: inherit;
+	font-size: 1.0em;
+	font-style: normal;
+}
+
+#rightcolumn {
+	position: relative;
+	padding: 10px 0px 0px 0px;
+	float: right;
+	/* The 428 width is so the trifecta has a straight line going down */
+	width: 428px;
+	text-align: center;
+}
+
+#rightcolumn p, #projects p {
+	margin: 0px 15px 20px 15px;
+	text-align: justify;
+	clear: both;
+		/* Alternate color for all text on page */
+		/*color: #92B3B8;*/
+}
+
+#portfolio {
+	position: relative;
+	padding: 10px 0px 0px 0px;
+	float: left;
+	width: 510px;
+	text-align: center;
+}
+
+#content #loading {
+  position: absolute;
+  top: 230px;
+  left: 260px;
+  z-index: 4;
+}
+
+#projects {
+	position: relative;
+	padding: 10px 0px 30px 0px;
+	float: right;
+	width: 240px;
+	text-align: center;
+	z-index: 5;
+}
+/* This is for IE6 and below */
+* html #projects { width:229px; }
+
+.link {
+	float: right;
+	margin-right: 20px;
+	/* JASON */
+	/* font-size: 10px; */
+	font-size:.8em;
+	color: #9C9C9C;
+	background: inherit;
+}
+
+#portfolio a.link { margin: 4px 14px 0px 0px; }
+
+/*.link a {
+	font-size: 1em;
+}*/
+
+#footer{
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	clear: both;
+	width: 100%;
+	height: 20px;
+	color: #153244;
+	background: inherit;
+}
+
+
+form{
+	margin: 0px 15px 20px 15px;
+	padding: 0px;
+	text-align: left;
+}
+
+.row {
+	clear: both;
+	display: block;
+	margin: 5px 0px 5px 0px;
+	text-align: left;
+	height: 30px;
+}
+
+fieldset {
+	border: 0px;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	text-align: left;
+	clear: both;
+}
+
+fieldset label {
+	float: left;
+	width: 60px;
+	text-align: left;
+}
+
+fieldset input {
+	position: relative;
+	width: 200px;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+
+fieldset textarea {
+	position: relative;
+	float: left;
+	margin: 0px 0px 15px;
+	padding: 0px;
+}
+
+input#preview {
+	float: none;
+	clear: both;
+	margin: 20px 0px 0px 60px;
+	width: 120px;
+}
+
+input#edit, input#submit {
+	float: none;
+	clear: none;
+	margin: 20px 0px 0px 20px;
+	width: 120px;
+}
+
+em {
+	text-decoration: underline;
+}
+
+.contactbody {
+	margin: 0px 0px 0px 10px;
+}
+
+
+
+
+/********************************* links ********************************/
+
+#nav a, .subnav a{
+	text-decoration: none;
+}
+
+#nav a, .subnav a, #footer a{
+	color: #7BB0C0;
+	background: inherit;
+}
+
+#nav a:hover, .subnav a:hover, #footer a:hover, #nav a.active, .subnav a.active, 
+#nav a:focus, .subnav a:focus, #footer a:focus /* #nav a.location, .subnav a.location */ {
+	color: #FFFFFF;
+	background: inherit;
+}
+
+a{
+	text-decoration: none;
+	color: #FFFFFF;
+	background: inherit;
+	padding: 0px 2px 0px 2px;
+}
+
+#content a:hover, #content a:focus {
+	color: #001321;
+	background: #FFFFFF;
+}
+
+acronym, abbr {
+	border: inherit;
+}
+
+/********************************* lists ********************************/
+
+ul, dl, ol {
+	text-align: justify;
+}
+
+#leftcolumn ul, #leftcolumn dl {
+	position: relative;
+	list-style-type: none;
+	text-align: justify;
+	margin: 0px 15px 0px 15px;
+	padding: 0px;
+}
+
+#leftcolumn li, #leftcolumn dt {
+	margin: 0px 15px 0px 0px;
+}
+
+#contact dt {
+	text-transform: lowercase;
+}
+
+#leftcolumn li.last { margin: 0px; }
+
+#alternate img { white-space:nowrap; } 
+
+.bold, dd { color: #FFFFFF; background: inherit; }
+.boldbig, dt {
+ 	/* JASON */
+	/* font-size: 16px; */
+	font-size: 1.35em;
+	font-weight: bold;
+}
+
+#portfolio ul {
+	position: relative;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#portfolio li {
+	display: inline;
+	padding-left:11px;
+ }
+#portfolio li:first-child { margin-left:2px; }
+
+/* Replaced by the 2 padding-left declarations above.
+#portfolio li { margin: 0px 11px 0px 0px; }
+#portfolio li.last { margin: 0px; }
+*/
+
+#projects ul {
+	position: relative;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#projects li {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	display: block;
+	width: 100%;
+	clear: both;
+ }
+ 
+#projects li.link { padding-bottom: 10px; }
+
+#leftcolumn dl { margin-top: 15px; }
+
+dd {
+	padding: 0px;
+	margin: 0px 0px 10px 15px;
+}
+
+/************************** header typestyles ***************************/
+
+h1
+{
+	display: none;
+	
+	margin: 0px 0px 25px 0px;
+	padding: 0px 0px 30px 0px;
+	color: #FFFFFF;
+	background: inherit;
+	text-transform: uppercase;
+	text-align: left;
+	/* JASON */
+	/* font-size: 46px; */
+	font-size: 4em;
+	font-weight: normal;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Helvetica", "Century Gothic", sans-serif;
+}
+
+h2
+{
+	font-family: "Verdana", "Lucida Sans Unicode", "Century Gothic", sans-serif;
+	/* JASON */
+	/* font-size: 18px; */
+	font-size: 1.5em;
+	text-align: left;
+	margin: 15px 15px 10px 15px;
+	/*color: #00E2FF;*/
+	color: #FFFFFF;
+	background: inherit;
+	text-transform: lowercase;
+}
+
+h3
+{
+	font-family: "Verdana", "Lucida Sans Unicode", "Century Gothic", sans-serif;
+	/* JASON */
+	/* font-size: 18px; */
+	font-size: 1.5em;
+	text-align: left;
+	margin: 15px 15px 10px 15px;
+	/*color: #00E2FF;*/
+	text-transform: lowercase;
+}
+
+h5, #portfolio h3
+{
+	margin: 1px 15px 9px 3px;
+	padding-left: 11px;
+	color: #AEC8CF;
+	background: inherit;
+	text-align: left;
+	/* JASON */
+	/* font-size: 10px; */
+	font-size: .9em;
+	font-weight: bold;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Helvetica", "Century Gothic", sans-serif;
+}
+
+h6
+{
+	margin: 0px 15px 0px 15px;
+	padding: 0px 0px 0px 0px;
+	color: #AEC8CF;
+	background: inherit;
+	text-align: right;
+	/* JASON */
+	/* font-size: 10px; */
+	font-size: .9em;
+	font-weight: bold;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Helvetica", "Century Gothic", sans-serif;
+}
+
+/************************** miscellaneous elements ***************************/
+
+kbd, code {
+	font-family: "Courier New","Courier",monospace;
+}
+
+/************************** fixes ********************************************/
+
+/*********** procedure steps converted from em to h3 ******************/
+/*** this section should be deleted when approach-v3 goes into effect 
+#procedure #rightcolumn div.them { background-color:#001C29; }
+#procedure #rightcolumn div h3 { display:inline; float:left; margin:0; line-height:1.5em; margin-right:.55em; 
+	color:white; text-decoration:underline; font-size:1.2em; font-weight:bold; font-family: "Trebuchet MS", "Verdana", "Lucida Sans Unicode", "Century Gothic", sans-serif; }
+#procedure #rightcolumn div { margin: 0px 15px 20px 15px; }
+#procedure #rightcolumn div p { margin:0; clear:none; }
+***********************************************************************/
+
+/*********** procedure steps converted from div to ol *****************/
+#procedure #rightcolumn ol { list-style-type:none; margin:0; padding:0; }
+/*#procedure #rightcolumn li.them { color: #AACEDA; background-color:#001C29; }*/
+#procedure #rightcolumn li h3 { display:inline; float:left; margin:0; line-height:1.5em; margin-right:.55em; 
+	color:white; background-color:transparent; text-decoration:underline; font-size:1.2em; font-weight:bold; 
+	font-family: "Trebuchet MS", "Verdana", "Lucida Sans Unicode", "Century Gothic", sans-serif; }
+#procedure #rightcolumn li { margin: 0px 15px 20px 15px; }
+#procedure #rightcolumn li p { margin:0; clear:none; }
+
+/*********** sitemap on about page ************************************/
+#leftcolumn .map li {text-align:right; margin-right:5px; }
+#leftcolumn .map li a {float:left;}
+#leftcolumn .map li ul {margin-right:0; }
+#leftcolumn .map li ul li {margin-right:0;}
+
+/*********** lists in rightcolumn on about page ***********************/
+#rightcolumn ul, #rightcolumn ol { margin-right:15px; }
+
+/*********** project listing header (h2) on portfolio page ************/
+#projects h2 {margin-left:12px;}
+
+/*********** project listing lined up with footer *********************/
+div#projects li {margin-left:11px;}
+div#projects li.link {float:none; }
+
+/*********** footer converted from h6 to ul,li ************************/
+#footer ul {
+	margin: 0px 15px 0px 15px;
+	padding: 0px 0px 0px 0px;
+	color: #AEC8CF;
+	background: inherit;
+	text-align: right;
+	/* JASON */
+	/* font-size: 10px; */
+	font-size: .9em;
+	font-weight: bold;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Helvetica", "Century Gothic", sans-serif;
+}
+#footer li {display:inline; border-left:1px solid; padding:0 5px;}
+#footer li:first-child {border:0;}
+#footer li:last-child {padding-right:0;}
+
+/*********** microformats ***********************************************/
+a.include, object.include { display:none; }
+
+/*********** openid *****************************************************/
+input.openid {
+	background:#FFFFFF url(/images/openid.png) no-repeat 0 50%;
+	color:#000000;
+	padding-left: 16px;
+}
+
+/*********** footnotes **************************************************/
+#footnotes, sup.footnote-flag { display:none; }
+
+/*********** skip navigation ********************************************/
+#nav #skipnav { display:none; }
+
+/*********** jump to top ************************************************/
+#footer #jumptop { display:none; }
+
+/*********** error page *************************************************/
+#error ol { list-style-type: none; margin:0; padding:0; }
+#error dt { font-weight:normal; }

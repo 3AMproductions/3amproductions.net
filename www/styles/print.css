@@ -1,0 +1,38 @@
+/************************* Site-wide ******************************/
+
+* { margin:0; padding:0; }
+body { margin:0 5%; color: black; background:white; font-size:12pt; font-family:"Times New Roman",serif; }
+h1 { border-bottom:2pt solid; }
+h1, h2, h3, h4, h5, h6 { margin:10pt 0 5pt; text-transform:lowercase; font-weight:bold; }
+h1 { font-size: 20pt; margin-top:0; }
+h2 { font-size: 16pt; }
+h3 { font-size: 13pt; }
+p, li { margin:5pt 0; text-align: justify; }
+li ul { margin-left:15pt; }
+dt { margin-top:7pt; }
+dd { margin-left:15pt; }
+kbd, code { font-size:10pt; font-family:"Courier New", monospace; }
+#nav, .subnav, #footer ul { display:none; }
+a img { border:dashed #404040; border-width:1px 1px 0; }
+a { color: #404040; font-weight: bold; text-decoration: none; border-bottom:1px dashed; }
+a:after { content:" ->["attr(href)"]"; font-weight:normal; font-size:.75em; }
+.footnoted a:after { content:""; }
+abbr, acronym { border:0; }
+abbr[title]:after, acronym[title]:after { content:" ("attr(title)")"; font-size:.75em; }
+abbr[class~=geo]:after { content:""; }
+a.include, object.include { display:none; }
+
+/*********************** Page Specific ****************************/
+/* Portfolio */
+ul#alternate, #projects ul { list-style-type:none; }
+ul#alternate li { margin-right:7pt; display:inline; }
+/* Jason */
+#jason #leftcolumn ul { list-style-type:none; }
+/* Gilbert */
+#gilbert #leftcolumn ul { list-style-type:none; }
+#gilbert #photo { float: right; }
+/* Help */
+#help ul.map { list-style-type:none; }
+/* Procedure */
+#procedure ol { list-style-type:none; }
+#procedure .them { border:1px dotted #404040; background-color:#D0D0D0; padding:0 5pt; }

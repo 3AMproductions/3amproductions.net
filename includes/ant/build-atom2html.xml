@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir=".." default="main" name="atom2html">
+	<property name="srcxml" value="xml/twilight/portfolio.atom.xml" />
+	<property name="srcxsl" value="xml/ns/twix/twixatom2html.xsl" />
+	<property name="destxml" value="portfolio.atom.xhtml" />
+	<property name="xsltprops" location="ant/xsltransfomer.usersettings" />
+
+	<uptodate property="xmlBuild.notRequired" targetfile="xml/twilight/${destxml}.xml">
+		<srcfiles dir="${basedir}" includes="${srcxml},${srcxsl}" />
+	</uptodate>
+
+	<target name="main" unless="xmlBuild.notRequired">
+		<java classname="com.orangevolt.xslt.launcher.XSLTLauncher" fork="yes">
+			<arg value="-c" />
+			<arg value="net.sf.saxon.TransformerFactoryImpl" />
+			<arg value="-t" />
+			<arg value="${basedir}/${srcxsl}" />
+			<arg value="-p" />
+			<arg value="${xsltprops}" />
+			<arg value="-s" />
+			<arg value="${basedir}/${srcxml}" />
+			<arg value="-b" />
+			<arg value="${destxml}" />
+			<arg value="-v" />
+			<classpath>
+				<pathelement location="C:\Program Files\eclipse\plugins\com.orangevolt.eclipse.xslt.saxon_b84_1.0.5\lib\saxon8-sql.jar" />
+				<pathelement location="C:\Program Files\eclipse\plugins\com.orangevolt.eclipse.xslt.saxon_b84_1.0.5\lib\saxon8-xpath.jar" />
+				<pathelement location="C:\Program Files\eclipse\plugins\com.orangevolt.eclipse.xslt.saxon_b84_1.0.5\lib\saxon8.jar" />
+				<pathelement location="C:\Program Files\eclipse\plugins\com.orangevolt.eclipse.xslt_1.0.5\orangevoltxslt-launcher.jar" />
+			</classpath>
+		</java>
+	</target>
+</project>

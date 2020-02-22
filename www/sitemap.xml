@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+	<url>
+		<loc>http://3amproductions.net/</loc>
+		<!-- possible update: dynamically insert 'lastmod' -->
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>http://3amproductions.net/index</loc>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>http://3amproductions.net/approach</loc>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>http://3amproductions.net/about</loc>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>http://3amproductions.net/portfolio</loc>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>http://3amproductions.net/contact</loc>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>http://3amproductions.net/gilbert</loc>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>http://3amproductions.net/jason</loc>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>http://3amproductions.net/help</loc>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>http://3amproductions.net/atom</loc>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>http://3amproductions.net/rss</loc>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>http://3amproductions.net/tags</loc>
+		<changefreq>monthly</changefreq>
+	</url>
+</urlset>

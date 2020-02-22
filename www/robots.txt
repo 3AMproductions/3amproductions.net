@@ -1,0 +1,5 @@
+# robots.txt for http://3amproductions.net
+User-agent: *
+Disallow: /shortstat/
+Disallow: /webalizer/
+Disallow: /xml/twilight/

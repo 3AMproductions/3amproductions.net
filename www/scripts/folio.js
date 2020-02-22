@@ -1,13 +1,16 @@
 /*
+php-include http://cachefile.net/scripts/jquery/1.2.1/jquery-1.2.1.pack.js
 php-include lib.dom.js
-php-include lib.cssQuery.js.php
-php-include lib.prototype.js.php
-php-include lib.moofx.js.php
-// json needed if not using AJAX-XML (JSON is easier, but XML is smaller)
-php-include lib.json.js.php
-*/
 
-var folio = {
+php-include http://cachefile.net/scripts/prototype/moofx/moofx2/prototype.lite.js
+php-include http://cachefile.net/scripts/prototype/moofx/moofx2/source/moo.fx.js
+php-include http://cachefile.net/scripts/prototype/moofx/moofx2/source/moo.fx.utils.js
+
+// json needed if not using AJAX-XML (JSON is easier, but XML is smaller)
+//-include lib.json.js.php
+*/
+jQuery(function($){
+folio = {
 	folio : this,
 	url : '',
 	ajax_type : 'xml',//'json' or 'xml'
@@ -19,31 +22,38 @@ var folio = {
 	fader : {},
 	init : function(){
 		folio.fader = new fx.Opacity('portfolio',{duration:1500,onComplete:folio.complete});
-		var alts = cssQuery("#alternate a");
-		alts.each(function(link){Event.observe(link, 'click', folio.alternate.bindAsEventListener(link));});
-		var links = cssQuery("#projects a[title^='select']");
-		links.each(function(link){Event.observe(link, 'click', folio.change.bindAsEventListener(link));});
+		$("#alternate a").click(folio.alternate);
+		$("#projects a[title^='select']").click(folio.change);
 	},
-	alternate : function(e){
-		Event.stop(e);
+	alternate : function(event){
+		event.preventDefault();
 		if(folio.processing) return;
 		folio.url = this.href;
-		var pars = '';
-		var img = cssQuery("#portfolio > img")[0];
-		Event.stopObserving(img,'load',folio.loading);
+		$("#portfolio > img").unbind('load',folio.loading);
 		if ((typeof fnotes != "undefined") && (typeof fnotes != null))
 			fnotes.clear();
-		folio.ajax = new Ajax.Request(folio.url,{requestHeaders: ['X-AJAX-Content-Type', 'xml'], response: 'xml', method: 'post', parameters: pars, onComplete: folio.altcomplete});
+		folio.ajax = $.ajax({
+			type: "GET",
+            url: folio.url,
+            dataType: folio.ajax_type,
+            complete:folio.altcomplete,
+            beforeSend:function(req){req.setRequestHeader('X-AJAX-Content-Type', folio.ajax_type);}});
 		folio.processing = true;
 	},
-	change : function(e){
-		Event.stop(e);
+	change : function(event){
+		event.preventDefault();
 		if(folio.processing == true || folio.fader.timer != null) return;
 		folio.url = this.href;
-		var pars = '';
 		if ((typeof fnotes != "undefined") && (typeof fnotes != null))
 			fnotes.clear();
-		folio.ajax = new Ajax.Request(folio.url,{requestHeaders: ['X-AJAX-Content-Type', folio.ajax_type], response: folio.ajax_type, method: 'post', parameters: pars, onLoading: folio.loading, onComplete: folio.complete});
+		folio.ajax = $.ajax({
+			type: "GET",
+            url: folio.url,
+            dataType: folio.ajax_type,
+            complete: folio.complete,
+            beforeSend: function(req){
+                req.setRequestHeader('X-AJAX-Content-Type', folio.ajax_type);
+                folio.loading();}});
 		folio.processing = true;
 	},
 	loading : function(){
@@ -52,11 +62,13 @@ var folio = {
 	altcomplete : function(req){
 		if(req && req.status){
 			if(req.status != 200) window.location = folio.url;
-			var xml = req.responseXML.getElementsByTagName('portfolio')[0];
-			var img = cssQuery("#portfolio > img")[0];
-			Event.stopObserving(img,'load',folio.loading);
-			img.setAttribute('src', getNodeValue(xml,'big_src') || '');
-			img.setAttribute('alt', getNodeValue(xml,'big_alt') || '');
+            // XML response
+            var xml = $(req.responseXML);
+            $('#portfolio > img').eq(0)
+                .unbind('load',folio.loading)
+                .attr('src',$("big_src",xml).text())
+                .attr('alt',$("big_alt",xml).text());
+            // TODO - JSON response
 			req = null;
 			folio.processing = false;
 		}
@@ -68,14 +80,14 @@ var folio = {
 		}
 		if(folio.req && folio.req.status && folio.fader.timer == null){
 			if(folio.req.status != 200) window.location = folio.url;
-			//folio.ajax.options.response
-			if(folio.ajax.header("X-AJAX-Content-Type") == "json") folio.jsonResponse();
-			else if(folio.ajax.header("X-AJAX-Content-Type") == "xml") folio.xmlResponse();
+			if(folio.req.responseXML) folio.xmlResponse();
+			else folio.jsonResponse();
 			folio.req = null;
 		}
 	},
+	/* this function is obsolete and must be re-written prior to use */
 	jsonResponse : function(){
-		var j = JSON.parse(folio.req.responseText);
+/*		var j = JSON.parse(folio.req.responseText);
 		var img = cssQuery("#portfolio > img")[0]; 
 		img.setAttribute('src', j.portfolio.big.src);
 		img.setAttribute('alt', j.portfolio.big.alt);
@@ -108,46 +120,42 @@ var folio = {
 		if ((typeof fnotes != "undefined") && (typeof fnotes != null))
 			fnotes.collect();
 		folio.processing = false;
+*/
 	},
 	xmlResponse : function(){
-		var xml = folio.req.responseXML.getElementsByTagName('portfolio')[0];
-		var img = cssQuery("#portfolio > img")[0];
-		img.setAttribute('src', getNodeValue(xml,'big_src') || '');
-		img.setAttribute('alt', getNodeValue(xml,'big_alt') || '');
-		img.setAttribute('title', getNodeValue(xml,'big_title') || '');
-		Event.observe(img,'load',folio.loading);
+		var xml = $(folio.req.responseXML);
+        $('#portfolio > img').eq(0)
+            .attr('src',$('big_src',xml).text())
+            .attr('alt',$('big_alt',xml).text())
+            .attr('title',$('big_title',xml).text())
+            .load(folio.loading);
 
-		var imgs = cssQuery("#alternate img");
-		var anchors = cssQuery("#alternate a");
-		var smalls = xml.getElementsByTagName('small');
-		for(var i=0; i<anchors.length; i++){
-			var new_img = imgs[i].cloneNode(false);
-			new_img.setAttribute('src', getNodeValue(smalls[i],'src') || '');
-			folio.alternates.push(getNodeValue(smalls[i],'src') || '');
-			new_img.setAttribute('alt', getNodeValue(smalls[i],'alt') || '');
-			new_img.setAttribute('title', getNodeValue(smalls[i],'title') || '');
-			imgs[i].parentNode.replaceChild(new_img,imgs[i]);
-			anchors[i].setAttribute('href', getNodeValue(smalls[i],'href') || '');
-		}
+        $('#alternate a').each(function(i){
+            $('img',this).remove().clone()
+                .attr('src',$('small src',xml).eq(i).text())
+                .attr('alt',$('small alt',xml).eq(i).text())
+                .attr('title',$('small title',xml).eq(i).text())
+                .appendTo(this);
+            $(this).attr('href',$('small href',xml).eq(i).text());
+            folio.alternates.push($('small src',xml).eq(i).text());
+        });
 
-		var a = cssQuery("#portfolio > a")[0];
-		a.setAttribute('href',getNodeValue(xml,'url'));
-		a.setAttribute('rel','external');
-		if(a.firstChild) a.firstChild.nodeValue = getNodeValue(xml,'url') || '';
-		else a.appendChild(document.createTextNode(getNodeValue(xml,'url') || '')); 
+        $('#portfolio > a').eq(0)
+            .attr('href',$('url',xml).text())
+            .attr('rel','external')
+			.text($('url',xml).text());
 
-		var a = cssQuery("#portfolio > p > a")[0];
-		a.setAttribute('href',getNodeValue(xml,'url') || '');
-		a.setAttribute('rel','external');
+        $('#portfolio > p > a').eq(0)
+            .attr('href',$('url',xml).text())
+			.attr('rel','external');
 
-		var p = cssQuery("#portfolio > p")[0];
-		while(p.firstChild) p.removeChild(p.firstChild);
-		var t = xml.getElementsByTagName('text')[0];
-		
-		for(var i=0; i<t.childNodes.length; i++){
-			var n = domdom.build(t.childNodes[i]);
-			if(n != null) p.appendChild(n);
-		}
+        var p = $('#portfolio > p').eq(0).empty();
+        var t = $('text',xml).get(0);
+        for(var i=0; i<t.childNodes.length; i++){
+            if((n = domdom.build(t.childNodes[i])))
+                p.append(n);
+        }
+
 		if ((typeof fnotes != "undefined") && (typeof fnotes != null))
 			fnotes.collect();
 		folio.processing = false;
@@ -157,4 +165,5 @@ var folio = {
 		folio.err = true;
 	}
 };
-Event.observe(window, 'load', folio.init);
+folio.init();
+});
