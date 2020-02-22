@@ -1,5 +1,5 @@
 /*
-php-include http://cachefile.net/scripts/jquery/1.2.1/jquery-1.2.1.pack.js
+php-include jquery-1.2.1.pack.js
 php-include lib.moofx.js.php
 // json needed if not using AJAX-XML (JSON is easier, but XML is smaller)
 php-include lib.json.js.php

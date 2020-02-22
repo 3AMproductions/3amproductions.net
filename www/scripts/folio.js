@@ -1,10 +1,10 @@
 /*
-php-include http://cachefile.net/scripts/jquery/1.2.1/jquery-1.2.1.pack.js
+php-include jquery-1.2.1.pack.js
 php-include lib.dom.js
 
-php-include http://cachefile.net/scripts/prototype/moofx/moofx2/prototype.lite.js
-php-include http://cachefile.net/scripts/prototype/moofx/moofx2/source/moo.fx.js
-php-include http://cachefile.net/scripts/prototype/moofx/moofx2/source/moo.fx.utils.js
+php-include moofx/prototype.lite.js
+php-include moofx/source/moo.fx.js
+php-include moofx/source/moo.fx.utils.js
 
 // json needed if not using AJAX-XML (JSON is easier, but XML is smaller)
 //-include lib.json.js.php

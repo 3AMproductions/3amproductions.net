@@ -1,5 +1,5 @@
 /* Following lines used to dynamically include dependent javascript files. Do not alter
-php-include http://cachefile.net/scripts/jquery/1.2.1/jquery-1.2.1.pack.js
+php-include jquery-1.2.1.pack.js
 */
 /*
  * Date picker plugin for jQuery
