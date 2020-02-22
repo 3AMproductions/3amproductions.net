@@ -18,7 +18,7 @@ ini_set('upload_max_filesize','262144');
 
 if(isset($_SERVER['OS']) and (stripos($_SERVER['OS'],'windows') !== false));
 //else ini_set('include_path', ini_get('include_path').':/home/pimp3am/includes:/home/pimp3am/ZendFramework/0.1.5/library');
-else ini_set('include_path', ini_get('include_path').':/app/includes:/home/pimp3am/ZendFramework/1.0.0/library');
+else ini_set('include_path', ini_get('include_path').':/app/includes:/app/vendor/ZendFramework/1.0.0/library');
 if(isset($_GET['showconfig'])){ if($_GET['showconfig'] == "phpinfo"){ header("Location: http://3amproductions.net/phpinfo"); exit;}}
 if(isset($_GET['md5'])){echo md5($_GET['md5']); exit;}
 if(isset($_GET['track'])){if($_GET['track'] == "no"){$_SESSION['track'] = false;}elseif($_GET['track'] == "yes"){$_SESSION['track'] = true;}}
